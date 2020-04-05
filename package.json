@@ -15,6 +15,10 @@
     "sss",
     "sugarss"
   ],
+  "main": "index.js",
+  "files": [
+    "*.js"
+  ],
   "author": "gucong",
   "license": "MIT",
   "nyc": {

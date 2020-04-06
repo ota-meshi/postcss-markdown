@@ -1,6 +1,6 @@
 # Changelog
 
-## Head
+## 0.36.1
 
 - Fixed: outdated dependencies
 

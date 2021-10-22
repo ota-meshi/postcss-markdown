@@ -34,7 +34,7 @@ If you want support SCSS/SASS/LESS/SugarSS syntax, you need to install the corre
 ```js
 const postcss = require("postcss");
 const syntax = require("postcss-markdown")({
-    // Enable support for HTML (default: true) See: https://github.com/gucong3000/postcss-html
+    // Enable support for HTML (default: true)
     htmlInMd: true,
     // syntax for parse scss (non-required options)
     scss: require("postcss-scss"),
@@ -68,13 +68,10 @@ output:
 <pre><code># title
 
 ```css
-::-webkit-input-placeholder {
+::-moz-placeholder {
     color: gray;
 }
 :-ms-input-placeholder {
-    color: gray;
-}
-::-ms-input-placeholder {
     color: gray;
 }
 ::placeholder {

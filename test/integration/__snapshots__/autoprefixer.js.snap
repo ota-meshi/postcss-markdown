@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Integration with autoprefixer autoprefixer with markdown test.md 1`] = `
+"# title
+
+\`\`\`css
+::-moz-placeholder {
+    color: gray;
+}
+:-ms-input-placeholder {
+    color: gray;
+}
+::placeholder {
+    color: gray;
+}
+\`\`\`
+"
+`;

@@ -1,5 +1,50 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Integration with stylelint stylelint --fix with markdown nest.md 1`] = `
+"# Header
+
+- CSS
+
+  \`\`\`css
+    a {
+      color: red;
+    }
+  \`\`\`
+
+  - CSS
+
+    \`\`\`css
+      a {
+        color: red;
+      }
+    \`\`\`
+
+- CSS
+
+  \`\`\`css
+    a {
+      color: red;
+    }
+  \`\`\`
+
+- CSS
+
+  \`\`\`css
+  a {
+    color: red;
+  }
+  \`\`\`
+
+- CSS
+
+  \`\`\`css
+  a {
+    color: red;
+  }
+  \`\`\`
+"
+`;
+
 exports[`Integration with stylelint stylelint --fix with markdown test.md 1`] = `
 "# Header
 
@@ -37,6 +82,81 @@ a {
 block
 \`\`\`
 "
+`;
+
+exports[`Integration with stylelint stylelint with markdown nest.md 1`] = `
+Array [
+  Object {
+    "column": 16,
+    "line": 7,
+    "rule": "declaration-block-trailing-semicolon",
+    "severity": "error",
+    "text": "Expected a trailing semicolon (declaration-block-trailing-semicolon)",
+  },
+  Object {
+    "column": 18,
+    "line": 15,
+    "rule": "declaration-block-trailing-semicolon",
+    "severity": "error",
+    "text": "Expected a trailing semicolon (declaration-block-trailing-semicolon)",
+  },
+  Object {
+    "column": 16,
+    "line": 23,
+    "rule": "declaration-block-trailing-semicolon",
+    "severity": "error",
+    "text": "Expected a trailing semicolon (declaration-block-trailing-semicolon)",
+  },
+  Object {
+    "column": 14,
+    "line": 31,
+    "rule": "declaration-block-trailing-semicolon",
+    "severity": "error",
+    "text": "Expected a trailing semicolon (declaration-block-trailing-semicolon)",
+  },
+  Object {
+    "column": 14,
+    "line": 41,
+    "rule": "declaration-block-trailing-semicolon",
+    "severity": "error",
+    "text": "Expected a trailing semicolon (declaration-block-trailing-semicolon)",
+  },
+  Object {
+    "column": 1,
+    "line": 39,
+    "rule": "max-empty-lines",
+    "severity": "error",
+    "text": "Expected no more than 1 empty line (max-empty-lines)",
+  },
+  Object {
+    "column": 1,
+    "line": 38,
+    "rule": "no-empty-first-line",
+    "severity": "error",
+    "text": "Unexpected empty line (no-empty-first-line)",
+  },
+  Object {
+    "column": 4,
+    "line": 24,
+    "rule": "indentation",
+    "severity": "error",
+    "text": "Expected indentation of 4 spaces (indentation)",
+  },
+  Object {
+    "column": 5,
+    "line": 32,
+    "rule": "indentation",
+    "severity": "error",
+    "text": "Expected indentation of 2 spaces (indentation)",
+  },
+  Object {
+    "column": 5,
+    "line": 42,
+    "rule": "indentation",
+    "severity": "error",
+    "text": "Expected indentation of 2 spaces (indentation)",
+  },
+]
 `;
 
 exports[`Integration with stylelint stylelint with markdown test.md 1`] = `

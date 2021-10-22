@@ -299,8 +299,37 @@ describe("api tests", () => {
 						"```css",
 						"b {}",
 						"",
-						"",
 						"```",
+					].join("\n")
+				);
+			});
+	});
+
+	it("stringify for nodes array", () => {
+		function nodesArrayPlugin() {
+			return {
+				postcssPlugin: "nodesArrayPlugin",
+				Root(root) {
+					root.nodes = postcss.parse("b {}").nodes;
+				},
+			};
+		}
+
+		nodesArrayPlugin.postcss = true;
+
+		const md = "<style></style>";
+		return postcss([nodesArrayPlugin])
+			.process(md, {
+				syntax,
+				from: "push.md",
+			})
+			.then((result) => {
+				expect(result.root.source).to.haveOwnProperty("lang", "markdown");
+				expect(result.content).to.equal(
+					[
+						//
+						"<style>",
+						"b {}</style>",
 					].join("\n")
 				);
 			});

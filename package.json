@@ -79,7 +79,7 @@
     "nyc": "^15.1.0",
     "postcss-html": "^1.0.0-0",
     "postcss-less": "^5.0.0",
-    "postcss-scss": "^2.0.0",
+    "postcss-scss": "^4.0.0",
     "postcss-styl": "^0.9.0",
     "prettier": "^2.4.1",
     "stylelint": "^14.0.0",

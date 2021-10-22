@@ -58,12 +58,13 @@ describe("markdown tests", () => {
 			from: "markdown.md",
 		});
 		expect(document.source).to.haveOwnProperty("lang", "markdown");
-		expect(document.nodes).to.have.lengthOf(3);
+		expect(document.nodes).to.have.lengthOf(4);
 		expect(document.toString()).to.equal(md);
 	});
 
 	it("empty code block", () => {
 		const source = [
+			//
 			"hi",
 			"",
 			"```css",

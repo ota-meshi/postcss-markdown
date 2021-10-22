@@ -1,0 +1,538 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AST tests test.md ast 1`] = `
+Object {
+  "inputs": Array [
+    Object {
+      "css": "a {
+  color: red;
+}
+",
+      "file": "/test.md",
+      "hasBOM": false,
+    },
+    Object {
+      "css": "a {
+  color: red;
+}
+",
+      "file": "/test.md",
+      "hasBOM": false,
+    },
+    Object {
+      "css": "a {
+  color: red;
+}
+",
+      "file": "/test.md",
+      "hasBOM": false,
+    },
+    Object {
+      "css": "# Header
+
+\`\`\`css
+a {
+  color: red;
+}
+\`\`\`
+
+\`\`\`scss
+a {
+  color: red;
+}
+// comment
+.b {
+  color: red;
+}
+\`\`\`
+
+\`\`\`html
+<style>
+a {
+  color: red;
+}
+</style>
+\`\`\`
+
+<style>
+a {
+  color: red;
+}
+</style>
+
+\`\`\`
+block
+\`\`\`
+",
+      "file": "/test.md",
+      "hasBOM": false,
+    },
+  ],
+  "nodes": Array [
+    Object {
+      "document": "$document",
+      "indexes": Object {},
+      "lastEach": 1,
+      "nodes": Array [
+        Object {
+          "indexes": Object {},
+          "lastEach": 1,
+          "nodes": Array [
+            Object {
+              "prop": "color",
+              "raws": Object {
+                "before": "
+  ",
+                "between": ": ",
+              },
+              "source": Object {
+                "end": Object {
+                  "column": 13,
+                  "line": 5,
+                  "offset": 33,
+                },
+                "inputId": 0,
+                "start": Object {
+                  "column": 3,
+                  "line": 5,
+                  "offset": 23,
+                },
+              },
+              "type": "decl",
+              "value": "red",
+            },
+          ],
+          "raws": Object {
+            "after": "
+",
+            "before": "",
+            "between": " ",
+            "semicolon": true,
+          },
+          "selector": "a",
+          "source": Object {
+            "end": Object {
+              "column": 1,
+              "line": 6,
+              "offset": 35,
+            },
+            "inputId": 0,
+            "start": Object {
+              "column": 1,
+              "line": 4,
+              "offset": 17,
+            },
+          },
+          "type": "rule",
+        },
+      ],
+      "raws": Object {
+        "after": "
+",
+        "codeBefore": "# Header
+
+\`\`\`css
+",
+        "semicolon": false,
+      },
+      "source": Object {
+        "end": undefined,
+        "inputId": 0,
+        "start": Object {
+          "column": 1,
+          "line": 4,
+          "offset": 17,
+        },
+      },
+      "type": "root",
+    },
+    Object {
+      "document": "$document",
+      "indexes": Object {},
+      "lastEach": 1,
+      "nodes": Array [
+        Object {
+          "indexes": Object {},
+          "lastEach": 1,
+          "nodes": Array [
+            Object {
+              "prop": "color",
+              "raws": Object {
+                "before": "
+  ",
+                "between": ": ",
+              },
+              "source": Object {
+                "end": Object {
+                  "column": 13,
+                  "line": 11,
+                },
+                "input": Input {
+                  "css": "a {
+  color: red;
+}
+// comment
+.b {
+  color: red;
+}
+",
+                  "file": "/test.md",
+                  "hasBOM": false,
+                },
+                "start": Object {
+                  "column": 3,
+                  "line": 11,
+                },
+              },
+              "type": "decl",
+              "value": "red",
+            },
+          ],
+          "raws": Object {
+            "after": "
+",
+            "before": "",
+            "between": " ",
+            "semicolon": true,
+          },
+          "selector": "a",
+          "source": Object {
+            "end": Object {
+              "column": 1,
+              "line": 12,
+            },
+            "input": Input {
+              "css": "a {
+  color: red;
+}
+// comment
+.b {
+  color: red;
+}
+",
+              "file": "/test.md",
+              "hasBOM": false,
+            },
+            "start": Object {
+              "column": 1,
+              "line": 10,
+            },
+          },
+          "type": "rule",
+        },
+        Object {
+          "raws": Object {
+            "before": "
+",
+            "inline": true,
+            "left": " ",
+            "right": "",
+            "text": "comment",
+          },
+          "source": Object {
+            "end": Object {
+              "column": 10,
+              "line": 13,
+            },
+            "input": Input {
+              "css": "a {
+  color: red;
+}
+// comment
+.b {
+  color: red;
+}
+",
+              "file": "/test.md",
+              "hasBOM": false,
+            },
+            "start": Object {
+              "column": 1,
+              "line": 13,
+            },
+          },
+          "text": "comment",
+          "type": "comment",
+        },
+        Object {
+          "indexes": Object {},
+          "lastEach": 1,
+          "nodes": Array [
+            Object {
+              "prop": "color",
+              "raws": Object {
+                "before": "
+  ",
+                "between": ": ",
+              },
+              "source": Object {
+                "end": Object {
+                  "column": 13,
+                  "line": 15,
+                },
+                "input": Input {
+                  "css": "a {
+  color: red;
+}
+// comment
+.b {
+  color: red;
+}
+",
+                  "file": "/test.md",
+                  "hasBOM": false,
+                },
+                "start": Object {
+                  "column": 3,
+                  "line": 15,
+                },
+              },
+              "type": "decl",
+              "value": "red",
+            },
+          ],
+          "raws": Object {
+            "after": "
+",
+            "before": "
+",
+            "between": " ",
+            "semicolon": true,
+          },
+          "selector": ".b",
+          "source": Object {
+            "end": Object {
+              "column": 1,
+              "line": 16,
+            },
+            "input": Input {
+              "css": "a {
+  color: red;
+}
+// comment
+.b {
+  color: red;
+}
+",
+              "file": "/test.md",
+              "hasBOM": false,
+            },
+            "start": Object {
+              "column": 1,
+              "line": 14,
+            },
+          },
+          "type": "rule",
+        },
+      ],
+      "raws": Object {
+        "after": "
+",
+        "codeBefore": "\`\`\`
+
+\`\`\`scss
+",
+        "semicolon": false,
+      },
+      "source": Object {
+        "inline": false,
+        "input": Input {
+          "css": "a {
+  color: red;
+}
+// comment
+.b {
+  color: red;
+}
+",
+          "file": "/test.md",
+          "hasBOM": false,
+        },
+        "lang": "scss",
+        "start": Object {
+          "column": 1,
+          "line": 10,
+        },
+        "syntax": Object {
+          "parse": [Function],
+          "stringify": [Function],
+        },
+      },
+      "type": "root",
+    },
+    Object {
+      "document": "$document",
+      "indexes": Object {},
+      "lastEach": 2,
+      "nodes": Array [
+        Object {
+          "indexes": Object {},
+          "lastEach": 2,
+          "nodes": Array [
+            Object {
+              "prop": "color",
+              "raws": Object {
+                "before": "
+  ",
+                "between": ": ",
+              },
+              "source": Object {
+                "end": Object {
+                  "column": 13,
+                  "line": 22,
+                  "offset": 139,
+                },
+                "inputId": 0,
+                "start": Object {
+                  "column": 3,
+                  "line": 22,
+                  "offset": 129,
+                },
+              },
+              "type": "decl",
+              "value": "red",
+            },
+          ],
+          "raws": Object {
+            "after": "
+",
+            "before": "",
+            "between": " ",
+            "semicolon": true,
+          },
+          "selector": "a",
+          "source": Object {
+            "end": Object {
+              "column": 1,
+              "line": 23,
+              "offset": 141,
+            },
+            "inputId": 0,
+            "start": Object {
+              "column": 1,
+              "line": 21,
+              "offset": 123,
+            },
+          },
+          "type": "rule",
+        },
+      ],
+      "raws": Object {
+        "after": "
+",
+        "codeAfter": "",
+        "codeBefore": "\`\`\`
+
+\`\`\`html
+<style>
+",
+        "semicolon": false,
+      },
+      "source": Object {
+        "end": undefined,
+        "inputId": 0,
+        "start": Object {
+          "column": 1,
+          "line": 21,
+          "offset": 123,
+        },
+      },
+      "type": "root",
+    },
+    Object {
+      "document": "$document",
+      "indexes": Object {},
+      "lastEach": 2,
+      "nodes": Array [
+        Object {
+          "indexes": Object {},
+          "lastEach": 2,
+          "nodes": Array [
+            Object {
+              "prop": "color",
+              "raws": Object {
+                "before": "
+  ",
+                "between": ": ",
+              },
+              "source": Object {
+                "end": Object {
+                  "column": 13,
+                  "line": 29,
+                  "offset": 181,
+                },
+                "inputId": 0,
+                "start": Object {
+                  "column": 3,
+                  "line": 29,
+                  "offset": 171,
+                },
+              },
+              "type": "decl",
+              "value": "red",
+            },
+          ],
+          "raws": Object {
+            "after": "
+",
+            "before": "",
+            "between": " ",
+            "semicolon": true,
+          },
+          "selector": "a",
+          "source": Object {
+            "end": Object {
+              "column": 1,
+              "line": 30,
+              "offset": 183,
+            },
+            "inputId": 0,
+            "start": Object {
+              "column": 1,
+              "line": 28,
+              "offset": 165,
+            },
+          },
+          "type": "rule",
+        },
+      ],
+      "raws": Object {
+        "after": "
+",
+        "codeAfter": "</style>
+
+\`\`\`
+block
+\`\`\`
+",
+        "codeBefore": "</style>
+\`\`\`
+
+<style>
+",
+        "semicolon": false,
+      },
+      "source": Object {
+        "end": undefined,
+        "inputId": 0,
+        "start": Object {
+          "column": 1,
+          "line": 28,
+          "offset": 165,
+        },
+      },
+      "type": "root",
+    },
+  ],
+  "raws": Object {},
+  "source": Object {
+    "end": undefined,
+    "inputId": 0,
+    "start": Object {
+      "column": 1,
+      "line": 1,
+    },
+  },
+  "type": "document",
+}
+`;

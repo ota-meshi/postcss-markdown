@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Integration with stylelint stylelint --fix with markdown test.md 1`] = `
+"# Header
+
+\`\`\`css
+a {
+  color: red;
+}
+\`\`\`
+
+\`\`\`scss
+a {
+  color: red;
+}
+// comment
+.b {
+  color: red;
+}
+\`\`\`
+
+\`\`\`html
+<style>
+a {
+  color: red;
+}
+</style>
+\`\`\`
+
+<style>
+a {
+  color: red;
+}
+</style>
+
+\`\`\`
+block
+\`\`\`
+"
+`;
+
+exports[`Integration with stylelint stylelint with markdown test.md 1`] = `
+Array [
+  Object {
+    "column": 12,
+    "line": 5,
+    "rule": "declaration-block-trailing-semicolon",
+    "severity": "error",
+    "text": "Expected a trailing semicolon (declaration-block-trailing-semicolon)",
+  },
+  Object {
+    "column": 12,
+    "line": 22,
+    "rule": "declaration-block-trailing-semicolon",
+    "severity": "error",
+    "text": "Expected a trailing semicolon (declaration-block-trailing-semicolon)",
+  },
+]
+`;

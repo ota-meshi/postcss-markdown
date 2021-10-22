@@ -126,20 +126,6 @@ const options = {
 const syntax = require("postcss-markdown")(options);
 ```
 
-## Turning PostCSS off from within your HTML
-
-PostCSS can be temporarily turned off by using special comments in your HTML. For example:
-
-```html
-<html>
-    <body>
-        <!-- postcss-disable -->
-        <a style="color: red;"></a>
-        <!-- postcss-enable -->
-    </body>
-</html>
-```
-
 ## Linting with Stylelint
 
 The main use case of this plugin is to apply linting with [Stylelint] to CSS (and CSS-like) code blocks in markdown file.

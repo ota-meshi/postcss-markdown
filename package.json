@@ -1,8 +1,22 @@
 {
-  "name": "@stylelint/postcss-markdown",
+  "name": "postcss-markdown",
   "version": "0.36.2",
+  "publishConfig": {
+    "access": "public",
+    "tag": "next"
+  },
   "description": "PostCSS syntax for parsing Markdown",
-  "repository": "stylelint/postcss-markdown",
+  "engines": {
+    "node": "^12 || >=14"
+  },
+  "main": "./lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ota-meshi/postcss-markdown.git"
+  },
   "keywords": [
     "postcss",
     "syntax",
@@ -15,49 +29,60 @@
     "sss",
     "sugarss"
   ],
-  "main": "index.js",
-  "files": [
-    "*.js"
-  ],
   "author": "gucong",
+  "contributors": [
+    "Yosuke Ota (https://github.com/ota-meshi)"
+  ],
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ota-meshi/postcss-markdown/issues"
+  },
+  "homepage": "https://github.com/ota-meshi/postcss-markdown#readme",
   "nyc": {
     "reporter": [
       "lcov",
       "text"
     ],
-    "all": true,
     "cache": true,
     "check-coverage": true
   },
   "scripts": {
-    "mocha": "mocha --no-timeouts",
+    "mocha": "mocha \"test/**/*.js\" --no-timeouts",
     "test": "nyc npm run mocha",
-    "debug": "npm run mocha -- --inspect-brk",
-    "release": "np"
+    "lint": "eslint .",
+    "eslint-fix": "eslint . --fix",
+    "preversion": "npm run test"
   },
   "dependencies": {
-    "remark": "^13.0.0",
-    "unist-util-find-all-after": "^3.0.2"
-  },
-  "peerDependencies": {
-    "postcss": ">=7.0.0",
-    "postcss-syntax": ">=0.36.2"
+    "postcss": "^8.3.9",
+    "postcss-safe-parser": "^6.0.0",
+    "remark-parse": "^9.0.0",
+    "unified": "^9.2.2"
   },
   "devDependencies": {
+    "@ota-meshi/eslint-plugin": "^0.10.0",
     "chai": "^4.2.0",
     "codecov": "^3.8.1",
+    "eslint": "^7.25.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-json-schema-validator": "^1.2.35",
+    "eslint-plugin-jsonc": "^1.7.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-node-dependencies": "^0.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-regexp": "^1.4.1",
+    "eslint-plugin-yml": "^0.10.1",
     "mocha": "^8.2.1",
-    "np": "^7.0.0",
+    "mocha-chai-jest-snapshot": "^1.1.3",
     "nyc": "^15.1.0",
-    "postcss": ">=7.0.27",
-    "postcss-html": ">=0.36.0",
-    "postcss-less": "^3.1.4",
+    "postcss-html": "^1.0.0-0",
+    "postcss-less": "^3.1.0",
     "postcss-scss": "^2.0.0",
-    "postcss-syntax": ">=0.36.2",
+    "postcss-styl": "^0.9.0",
+    "prettier": "^2.4.1",
+    "stylelint": "^14.0.0",
+    "stylelint-config-standard": "^23.0.0",
     "sugarss": "^2.0.0"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }

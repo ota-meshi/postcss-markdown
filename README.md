@@ -1,19 +1,24 @@
 # PostCSS Markdown Syntax
 
-[![NPM version](https://img.shields.io/npm/v/@stylelint/postcss-markdown.svg)](https://www.npmjs.org/package/@stylelint/postcss-markdown) [![Build Status](https://github.com/stylelint/postcss-markdown/workflows/CI/badge.svg)](https://github.com/stylelint/postcss-markdown/actions)
+[![NPM license](https://img.shields.io/npm/l/postcss-markdown.svg)](https://www.npmjs.com/package/postcss-markdown)
+[![NPM version](https://img.shields.io/npm/v/postcss-markdown/next.svg?style=flat-square)](https://www.npmjs.com/package/postcss-markdown/v/next)
+[![NPM downloads](https://img.shields.io/npm/dw/postcss-markdown.svg)](http://www.npmtrends.com/postcss-markdown)
+[![NPM downloads](https://img.shields.io/npm/dm/postcss-markdown.svg)](http://www.npmtrends.com/postcss-markdown)
+[![NPM downloads](https://img.shields.io/npm/dy/postcss-markdown.svg)](http://www.npmtrends.com/postcss-markdown)
+[![Build Status](https://github.com/ota-meshi/postcss-markdown/workflows/CI/badge.svg?branch=master)](https://github.com/ota-meshi/postcss-markdown/actions?query=workflow%3ACI)
 
 <img align="right" width="95" height="95"
-	title="Philosopher’s stone, logo of PostCSS"
-	src="http://postcss.github.io/postcss/logo.svg">
+ title="Philosopher’s stone, logo of PostCSS"
+ src="http://postcss.github.io/postcss/logo.svg">
 
-[PostCSS](https://github.com/postcss/postcss) Syntax for parsing [Markdown](https://daringfireball.net/projects/markdown/syntax)
+[PostCSS](https://github.com/postcss/postcss) syntax for parsing [Markdown](https://daringfireball.net/projects/markdown/syntax)
 
 ## Getting Started
 
 First thing's first, install the module:
 
-```
-npm install postcss-syntax postcss-markdown --save-dev
+```bash
+npm install postcss-markdown@next --save-dev
 ```
 
 If you want support SCSS/SASS/LESS/SugarSS syntax, you need to install the corresponding module.
@@ -22,27 +27,29 @@ If you want support SCSS/SASS/LESS/SugarSS syntax, you need to install the corre
 - SASS: [postcss-sass](https://github.com/aleshaoleg/postcss-sass)
 - LESS: [postcss-less](https://github.com/shellscape/postcss-less)
 - SugarSS: [sugarss](https://github.com/postcss/sugarss)
+- Stylus: [postcss-styl](https://github.com/ota-meshi/postcss-styl)
 
 ## Use Cases
 
 ```js
-var syntax = require("postcss-syntax")({
-  // Enable support for HTML (default: true) See: https://github.com/gucong3000/postcss-html
-  htmlInMd: true,
-  // syntax for parse scss (non-required options)
-  scss: require("postcss-scss"),
-  // syntax for parse less (non-required options)
-  less: require("postcss-less"),
-  // syntax for parse css blocks (non-required options)
-  css: require("postcss-safe-parser")
+const postcss = require("postcss");
+const syntax = require("postcss-markdown")({
+    // Enable support for HTML (default: true) See: https://github.com/gucong3000/postcss-html
+    htmlInMd: true,
+    // syntax for parse scss (non-required options)
+    scss: require("postcss-scss"),
+    // syntax for parse less (non-required options)
+    less: require("postcss-less"),
+    // syntax for parse css blocks (non-required options)
+    css: require("postcss-safe-parser"),
 });
-var autoprefixer = require("autoprefixer");
+const autoprefixer = require("autoprefixer");
 postcss([autoprefixer])
-  .process(source, { syntax: syntax })
-  .then(function(result) {
-    // An alias for the result.css property. Use it with syntaxes that generate non-CSS output.
-    result.content;
-  });
+    .process(source, { syntax: syntax })
+    .then(function (result) {
+        // An alias for the result.css property. Use it with syntaxes that generate non-CSS output.
+        result.content;
+    });
 ```
 
 input:
@@ -51,7 +58,7 @@ input:
 
 ```css
 ::placeholder {
-	color: gray;
+    color: gray;
 }
 ```
 </code></pre>
@@ -62,16 +69,16 @@ output:
 
 ```css
 ::-webkit-input-placeholder {
-	color: gray;
+    color: gray;
 }
 :-ms-input-placeholder {
-	color: gray;
+    color: gray;
 }
 ::-ms-input-placeholder {
-	color: gray;
+    color: gray;
 }
 ::placeholder {
-	color: gray;
+    color: gray;
 }
 ```
 </code></pre>
@@ -82,11 +89,45 @@ If you want support SCSS/SASS/LESS/SugarSS syntax, you need to install these mod
 - SASS: [postcss-sass](https://github.com/aleshaoleg/postcss-sass)
 - LESS: [postcss-less](https://github.com/shellscape/postcss-less)
 - SugarSS: [sugarss](https://github.com/postcss/sugarss)
+- Stylus: [postcss-styl](https://github.com/ota-meshi/postcss-styl)
 
 ## Advanced Use Cases
 
-See: [postcss-syntax](https://github.com/gucong3000/postcss-syntax)
+### Options
 
-## Style Transformations
+```js
+const options = {
+    rules: [
+        {
+            // custom language
+            test: /^postcss$/i,
+            lang: "scss",
+        },
+        {
+            // custom language
+            test: /^customcss$/i,
+            lang: "custom",
+        },
+    ],
 
-The main use case of this plugin is apply PostCSS transformations to CSS (and CSS-like) code blocks in markdown file.
+    // custom parser for CSS (using `postcss-safe-parser`)
+    css: "postcss-safe-parser",
+    // custom parser for SASS (PostCSS-compatible syntax.)
+    sass: require("postcss-sass"),
+    // custom parser for SCSS (by module name)
+    scss: "postcss-scss",
+    // custom parser for LESS (by module path)
+    less: require.resolve("./node_modules/postcss-less"),
+    // custom parser for SugarSS
+    sugarss: require("sugarss"),
+    // custom parser for custom language
+    custom: require("postcss-custom-syntax"),
+};
+const syntax = require("postcss-markdown")(options);
+```
+
+## Linting with Stylelint
+
+The main use case of this plugin is to apply linting with [Stylelint] to CSS (and CSS-like) code blocks in markdown file.
+
+[stylelint]: https://stylelint.io/

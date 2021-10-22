@@ -130,4 +130,17 @@ const syntax = require("postcss-markdown")(options);
 
 The main use case of this plugin is to apply linting with [Stylelint] to CSS (and CSS-like) code blocks in markdown file.
 
+You can use it by configuring your `stylelint` config as follows:
+
+```json
+{
+    "overrides": [
+        {
+            "files": ["*.md", "**/*.md"],
+            "customSyntax": "postcss-markdown"
+        }
+    ]
+}
+```
+
 [stylelint]: https://stylelint.io/

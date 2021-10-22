@@ -754,6 +754,18 @@ Object {
       "css": "a {
   color: red;
 }
+// comment
+.b {
+  color: red;
+}
+",
+      "file": "/test.md",
+      "hasBOM": false,
+    },
+    Object {
+      "css": "a {
+  color: red;
+}
 ",
       "file": "/test.md",
       "hasBOM": false,
@@ -905,22 +917,13 @@ block
                 "end": Object {
                   "column": 13,
                   "line": 11,
+                  "offset": 66,
                 },
-                "input": Input {
-                  "css": "a {
-  color: red;
-}
-// comment
-.b {
-  color: red;
-}
-",
-                  "file": "/test.md",
-                  "hasBOM": false,
-                },
+                "inputId": 0,
                 "start": Object {
                   "column": 3,
                   "line": 11,
+                  "offset": 56,
                 },
               },
               "type": "decl",
@@ -939,22 +942,13 @@ block
             "end": Object {
               "column": 1,
               "line": 12,
+              "offset": 68,
             },
-            "input": Input {
-              "css": "a {
-  color: red;
-}
-// comment
-.b {
-  color: red;
-}
-",
-              "file": "/test.md",
-              "hasBOM": false,
-            },
+            "inputId": 0,
             "start": Object {
               "column": 1,
               "line": 10,
+              "offset": 50,
             },
           },
           "type": "rule",
@@ -972,22 +966,13 @@ block
             "end": Object {
               "column": 10,
               "line": 13,
+              "offset": 79,
             },
-            "input": Input {
-              "css": "a {
-  color: red;
-}
-// comment
-.b {
-  color: red;
-}
-",
-              "file": "/test.md",
-              "hasBOM": false,
-            },
+            "inputId": 0,
             "start": Object {
               "column": 1,
               "line": 13,
+              "offset": 70,
             },
           },
           "text": "comment",
@@ -1008,22 +993,13 @@ block
                 "end": Object {
                   "column": 13,
                   "line": 15,
+                  "offset": 98,
                 },
-                "input": Input {
-                  "css": "a {
-  color: red;
-}
-// comment
-.b {
-  color: red;
-}
-",
-                  "file": "/test.md",
-                  "hasBOM": false,
-                },
+                "inputId": 0,
                 "start": Object {
                   "column": 3,
                   "line": 15,
+                  "offset": 88,
                 },
               },
               "type": "decl",
@@ -1043,22 +1019,13 @@ block
             "end": Object {
               "column": 1,
               "line": 16,
+              "offset": 100,
             },
-            "input": Input {
-              "css": "a {
-  color: red;
-}
-// comment
-.b {
-  color: red;
-}
-",
-              "file": "/test.md",
-              "hasBOM": false,
-            },
+            "inputId": 0,
             "start": Object {
               "column": 1,
               "line": 14,
+              "offset": 81,
             },
           },
           "type": "rule",
@@ -1074,27 +1041,12 @@ block
         "semicolon": false,
       },
       "source": Object {
-        "inline": false,
-        "input": Input {
-          "css": "a {
-  color: red;
-}
-// comment
-.b {
-  color: red;
-}
-",
-          "file": "/test.md",
-          "hasBOM": false,
-        },
-        "lang": "scss",
+        "end": undefined,
+        "inputId": 0,
         "start": Object {
           "column": 1,
           "line": 10,
-        },
-        "syntax": Object {
-          "parse": [Function],
-          "stringify": [Function],
+          "offset": 50,
         },
       },
       "type": "root",

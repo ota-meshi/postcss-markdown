@@ -317,7 +317,11 @@ describe("api tests", () => {
 
 		nodesArrayPlugin.postcss = true;
 
-		const md = "<style></style>";
+		const md = [
+			//
+			"<style></style>",
+			"<style></style>",
+		].join("\n");
 		return postcss([nodesArrayPlugin])
 			.process(md, {
 				syntax,
@@ -328,6 +332,7 @@ describe("api tests", () => {
 				expect(result.content).to.equal(
 					[
 						//
+						"<style>b {}</style>",
 						"<style>b {}</style>",
 					].join("\n")
 				);

@@ -1570,6 +1570,481 @@ a {
 }
 `;
 
+exports[`AST tests scss.md ast 1`] = `
+Object {
+  "inputs": Array [
+    Object {
+      "css": "// comment
+a {
+  color: red;
+}
+// comment
+",
+      "file": "/scss.md",
+      "hasBOM": false,
+    },
+    Object {
+      "css": "// comment
+a {
+  color: red;
+}
+// comment
+",
+      "file": "/scss.md",
+      "hasBOM": false,
+    },
+    Object {
+      "css": "// comment
+a {
+  color: red;
+}
+// comment
+",
+      "file": "/scss.md",
+      "hasBOM": false,
+    },
+    Object {
+      "css": "# SCSS
+
+\`\`\`scss
+// comment
+a {
+  color: red;
+}
+// comment
+\`\`\`
+
+## SCSS in Vue Block
+
+\`\`\`vue
+<style lang=\\"scss\\">
+// comment
+a {
+  color: red;
+}
+// comment
+</style>
+\`\`\`
+
+## SCSS in HTML
+
+<style lang=\\"scss\\">
+// comment
+a {
+  color: red;
+}
+// comment
+</style>
+",
+      "file": "/scss.md",
+      "hasBOM": false,
+    },
+  ],
+  "nodes": Array [
+    Object {
+      "document": "$document",
+      "indexes": Object {},
+      "lastEach": 1,
+      "nodes": Array [
+        Object {
+          "raws": Object {
+            "before": "",
+            "inline": true,
+            "left": " ",
+            "right": "",
+            "text": "comment",
+          },
+          "source": Object {
+            "end": Object {
+              "column": 10,
+              "line": 4,
+              "offset": 25,
+            },
+            "inputId": 0,
+            "start": Object {
+              "column": 1,
+              "line": 4,
+              "offset": 16,
+            },
+          },
+          "text": "comment",
+          "type": "comment",
+        },
+        Object {
+          "indexes": Object {},
+          "lastEach": 1,
+          "nodes": Array [
+            Object {
+              "prop": "color",
+              "raws": Object {
+                "before": "
+  ",
+                "between": ": ",
+              },
+              "source": Object {
+                "end": Object {
+                  "column": 13,
+                  "line": 6,
+                  "offset": 43,
+                },
+                "inputId": 0,
+                "start": Object {
+                  "column": 3,
+                  "line": 6,
+                  "offset": 33,
+                },
+              },
+              "type": "decl",
+              "value": "red",
+            },
+          ],
+          "raws": Object {
+            "after": "
+",
+            "before": "
+",
+            "between": " ",
+            "semicolon": true,
+          },
+          "selector": "a",
+          "source": Object {
+            "end": Object {
+              "column": 1,
+              "line": 7,
+              "offset": 45,
+            },
+            "inputId": 0,
+            "start": Object {
+              "column": 1,
+              "line": 5,
+              "offset": 27,
+            },
+          },
+          "type": "rule",
+        },
+        Object {
+          "raws": Object {
+            "before": "
+",
+            "inline": true,
+            "left": " ",
+            "right": "",
+            "text": "comment",
+          },
+          "source": Object {
+            "end": Object {
+              "column": 10,
+              "line": 8,
+              "offset": 56,
+            },
+            "inputId": 0,
+            "start": Object {
+              "column": 1,
+              "line": 8,
+              "offset": 47,
+            },
+          },
+          "text": "comment",
+          "type": "comment",
+        },
+      ],
+      "raws": Object {
+        "after": "
+",
+        "codeBefore": "# SCSS
+
+\`\`\`scss
+",
+        "semicolon": false,
+      },
+      "source": Object {
+        "end": undefined,
+        "inputId": 0,
+        "start": Object {
+          "column": 1,
+          "line": 4,
+          "offset": 16,
+        },
+      },
+      "type": "root",
+    },
+    Object {
+      "document": "$document",
+      "indexes": Object {},
+      "lastEach": 2,
+      "nodes": Array [
+        Object {
+          "raws": Object {
+            "before": "",
+            "inline": true,
+            "left": " ",
+            "right": "",
+            "text": "comment",
+          },
+          "source": Object {
+            "end": Object {
+              "column": 10,
+              "line": 15,
+              "offset": 121,
+            },
+            "inputId": 0,
+            "start": Object {
+              "column": 1,
+              "line": 15,
+              "offset": 112,
+            },
+          },
+          "text": "comment",
+          "type": "comment",
+        },
+        Object {
+          "indexes": Object {},
+          "lastEach": 2,
+          "nodes": Array [
+            Object {
+              "prop": "color",
+              "raws": Object {
+                "before": "
+  ",
+                "between": ": ",
+              },
+              "source": Object {
+                "end": Object {
+                  "column": 13,
+                  "line": 17,
+                  "offset": 139,
+                },
+                "inputId": 0,
+                "start": Object {
+                  "column": 3,
+                  "line": 17,
+                  "offset": 129,
+                },
+              },
+              "type": "decl",
+              "value": "red",
+            },
+          ],
+          "raws": Object {
+            "after": "
+",
+            "before": "
+",
+            "between": " ",
+            "semicolon": true,
+          },
+          "selector": "a",
+          "source": Object {
+            "end": Object {
+              "column": 1,
+              "line": 18,
+              "offset": 141,
+            },
+            "inputId": 0,
+            "start": Object {
+              "column": 1,
+              "line": 16,
+              "offset": 123,
+            },
+          },
+          "type": "rule",
+        },
+        Object {
+          "raws": Object {
+            "before": "
+",
+            "inline": true,
+            "left": " ",
+            "right": "",
+            "text": "comment",
+          },
+          "source": Object {
+            "end": Object {
+              "column": 10,
+              "line": 19,
+              "offset": 152,
+            },
+            "inputId": 0,
+            "start": Object {
+              "column": 1,
+              "line": 19,
+              "offset": 143,
+            },
+          },
+          "text": "comment",
+          "type": "comment",
+        },
+      ],
+      "raws": Object {
+        "after": "
+",
+        "codeAfter": "",
+        "codeBefore": "\`\`\`
+
+## SCSS in Vue Block
+
+\`\`\`vue
+<style lang=\\"scss\\">
+",
+        "semicolon": false,
+      },
+      "source": Object {
+        "end": undefined,
+        "inputId": 0,
+        "start": Object {
+          "column": 1,
+          "line": 15,
+          "offset": 112,
+        },
+      },
+      "type": "root",
+    },
+    Object {
+      "document": "$document",
+      "indexes": Object {},
+      "lastEach": 2,
+      "nodes": Array [
+        Object {
+          "raws": Object {
+            "before": "",
+            "inline": true,
+            "left": " ",
+            "right": "",
+            "text": "comment",
+          },
+          "source": Object {
+            "end": Object {
+              "column": 10,
+              "line": 26,
+              "offset": 214,
+            },
+            "inputId": 0,
+            "start": Object {
+              "column": 1,
+              "line": 26,
+              "offset": 205,
+            },
+          },
+          "text": "comment",
+          "type": "comment",
+        },
+        Object {
+          "indexes": Object {},
+          "lastEach": 2,
+          "nodes": Array [
+            Object {
+              "prop": "color",
+              "raws": Object {
+                "before": "
+  ",
+                "between": ": ",
+              },
+              "source": Object {
+                "end": Object {
+                  "column": 13,
+                  "line": 28,
+                  "offset": 232,
+                },
+                "inputId": 0,
+                "start": Object {
+                  "column": 3,
+                  "line": 28,
+                  "offset": 222,
+                },
+              },
+              "type": "decl",
+              "value": "red",
+            },
+          ],
+          "raws": Object {
+            "after": "
+",
+            "before": "
+",
+            "between": " ",
+            "semicolon": true,
+          },
+          "selector": "a",
+          "source": Object {
+            "end": Object {
+              "column": 1,
+              "line": 29,
+              "offset": 234,
+            },
+            "inputId": 0,
+            "start": Object {
+              "column": 1,
+              "line": 27,
+              "offset": 216,
+            },
+          },
+          "type": "rule",
+        },
+        Object {
+          "raws": Object {
+            "before": "
+",
+            "inline": true,
+            "left": " ",
+            "right": "",
+            "text": "comment",
+          },
+          "source": Object {
+            "end": Object {
+              "column": 10,
+              "line": 30,
+              "offset": 245,
+            },
+            "inputId": 0,
+            "start": Object {
+              "column": 1,
+              "line": 30,
+              "offset": 236,
+            },
+          },
+          "text": "comment",
+          "type": "comment",
+        },
+      ],
+      "raws": Object {
+        "after": "
+",
+        "codeAfter": "</style>
+",
+        "codeBefore": "</style>
+\`\`\`
+
+## SCSS in HTML
+
+<style lang=\\"scss\\">
+",
+        "semicolon": false,
+      },
+      "source": Object {
+        "end": undefined,
+        "inputId": 0,
+        "start": Object {
+          "column": 1,
+          "line": 26,
+          "offset": 205,
+        },
+      },
+      "type": "root",
+    },
+  ],
+  "raws": Object {},
+  "source": Object {
+    "end": undefined,
+    "inputId": 0,
+    "start": Object {
+      "column": 1,
+      "line": 1,
+    },
+  },
+  "type": "document",
+}
+`;
+
 exports[`AST tests test.md ast 1`] = `
 Object {
   "inputs": Array [

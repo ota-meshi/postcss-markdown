@@ -1,5 +1,44 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Integration with stylelint stylelint --fix with markdown block-in-blockquote.md 1`] = `
+"# Header
+
+## Blockquote
+
+> \`\`\`css
+> a {
+>   color: red;
+> }
+> \`\`\`
+
+## Nesting Blockquote
+
+> > \`\`\`css
+> > a {
+> >   color: red;
+> > }
+> > \`\`\`
+
+## Blockquote With HTML
+
+> \`\`\`html
+> <style>
+> a {
+>   color: red;
+> }
+> </style>
+> \`\`\`
+
+## Blockquote With Blank
+
+> > \`\`\`css
+> > a {
+> >   color: red;
+> > }
+> > \`\`\`
+"
+`;
+
 exports[`Integration with stylelint stylelint --fix with markdown nest.md 1`] = `
 "# Header
 
@@ -82,6 +121,53 @@ a {
 block
 \`\`\`
 "
+`;
+
+exports[`Integration with stylelint stylelint with markdown block-in-blockquote.md 1`] = `
+Array [
+  Object {
+    "column": 7,
+    "line": 36,
+    "rule": "block-closing-brace-empty-line-before",
+    "severity": "error",
+    "text": "Unexpected empty line before closing brace (block-closing-brace-empty-line-before)",
+  },
+  Object {
+    "column": 7,
+    "line": 34,
+    "rule": "declaration-empty-line-before",
+    "severity": "error",
+    "text": "Unexpected empty line before declaration (declaration-empty-line-before)",
+  },
+  Object {
+    "column": 5,
+    "line": 8,
+    "rule": "indentation",
+    "severity": "error",
+    "text": "Expected indentation of 2 spaces (indentation)",
+  },
+  Object {
+    "column": 7,
+    "line": 16,
+    "rule": "indentation",
+    "severity": "error",
+    "text": "Expected indentation of 4 spaces (indentation)",
+  },
+  Object {
+    "column": 5,
+    "line": 25,
+    "rule": "indentation",
+    "severity": "error",
+    "text": "Expected indentation of 2 spaces (indentation)",
+  },
+  Object {
+    "column": 7,
+    "line": 36,
+    "rule": "indentation",
+    "severity": "error",
+    "text": "Expected indentation of 4 spaces (indentation)",
+  },
+]
 `;
 
 exports[`Integration with stylelint stylelint with markdown nest.md 1`] = `

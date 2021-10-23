@@ -328,8 +328,7 @@ describe("api tests", () => {
 				expect(result.content).to.equal(
 					[
 						//
-						"<style>",
-						"b {}</style>",
+						"<style>b {}</style>",
 					].join("\n")
 				);
 			});

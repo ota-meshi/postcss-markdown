@@ -28,6 +28,11 @@ color: red;
       "hasBOM": false,
     },
     Object {
+      "css": ".d {}",
+      "file": "/html-in-md.md",
+      "hasBOM": false,
+    },
+    Object {
       "css": "<div>
 
 <div>
@@ -54,6 +59,8 @@ color: red;
 </style>
 
 </div>
+
+<style>.d {} </style>
 ",
       "file": "/html-in-md.md",
       "hasBOM": false,
@@ -279,10 +286,7 @@ color: red;
       "raws": Object {
         "after": "
 ",
-        "codeAfter": "</style>
-
-</div>
-",
+        "codeAfter": "",
         "codeBefore": "</style>
 
 </div>
@@ -298,6 +302,59 @@ color: red;
           "column": 1,
           "line": 21,
           "offset": 104,
+        },
+      },
+      "type": "root",
+    },
+    Object {
+      "document": "$document",
+      "indexes": Object {},
+      "lastEach": 2,
+      "nodes": Array [
+        Object {
+          "indexes": Object {},
+          "lastEach": 2,
+          "nodes": Array [],
+          "raws": Object {
+            "after": "",
+            "before": "",
+            "between": " ",
+          },
+          "selector": ".d",
+          "source": Object {
+            "end": Object {
+              "column": 12,
+              "line": 28,
+              "offset": 152,
+            },
+            "inputId": 0,
+            "start": Object {
+              "column": 8,
+              "line": 28,
+              "offset": 148,
+            },
+          },
+          "type": "rule",
+        },
+      ],
+      "raws": Object {
+        "after": "",
+        "codeAfter": " </style>
+",
+        "codeBefore": "</style>
+
+</div>
+
+<style>",
+        "semicolon": false,
+      },
+      "source": Object {
+        "end": undefined,
+        "inputId": 0,
+        "start": Object {
+          "column": 8,
+          "line": 28,
+          "offset": 148,
         },
       },
       "type": "root",

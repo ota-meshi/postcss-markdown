@@ -1530,7 +1530,6 @@ color: red;
       "raws": Object {
         "after": "
 ",
-        "codeAfter": "",
         "codeBefore": "<div>
 
 <div>
@@ -1611,7 +1610,6 @@ color: red;
       "raws": Object {
         "after": "
 ",
-        "codeAfter": "",
         "codeBefore": "</style>
 
 <style>
@@ -1689,7 +1687,6 @@ color: red;
       "raws": Object {
         "after": "
 ",
-        "codeAfter": "",
         "codeBefore": "</style>
 
 </div>
@@ -2142,7 +2139,6 @@ a {
       "raws": Object {
         "after": "
 ",
-        "codeAfter": "",
         "codeBefore": "</style>
 \`\`\`
 
@@ -2267,6 +2263,117 @@ a {
 }
 `;
 
+exports[`AST tests ignore-comment-with-html.md ast 1`] = `
+Object {
+  "inputs": Array [
+    Object {
+      "css": ".b {color: red;}",
+      "file": "/ignore-comment-with-html.md",
+      "hasBOM": false,
+    },
+    Object {
+      "css": "# Ignore Comment with HTML
+
+<!--postcss-ignore-->
+
+<style>.a {color: red;}</style><style>.b {color: red;}</style>
+",
+      "file": "/ignore-comment-with-html.md",
+      "hasBOM": false,
+    },
+  ],
+  "nodes": Array [
+    Object {
+      "document": "$document",
+      "indexes": Object {},
+      "lastEach": 2,
+      "nodes": Array [
+        Object {
+          "indexes": Object {},
+          "lastEach": 2,
+          "nodes": Array [
+            Object {
+              "prop": "color",
+              "raws": Object {
+                "before": "",
+                "between": ": ",
+              },
+              "source": Object {
+                "end": Object {
+                  "column": 53,
+                  "line": 5,
+                  "offset": 103,
+                },
+                "inputId": 0,
+                "start": Object {
+                  "column": 43,
+                  "line": 5,
+                  "offset": 93,
+                },
+              },
+              "type": "decl",
+              "value": "red",
+            },
+          ],
+          "raws": Object {
+            "after": "",
+            "before": "",
+            "between": " ",
+            "semicolon": true,
+          },
+          "selector": ".b",
+          "source": Object {
+            "end": Object {
+              "column": 54,
+              "line": 5,
+              "offset": 104,
+            },
+            "inputId": 0,
+            "start": Object {
+              "column": 39,
+              "line": 5,
+              "offset": 89,
+            },
+          },
+          "type": "rule",
+        },
+      ],
+      "raws": Object {
+        "after": "",
+        "codeAfter": "</style>
+",
+        "codeBefore": "# Ignore Comment with HTML
+
+<!--postcss-ignore-->
+
+<style>.a {color: red;}</style><style>",
+        "semicolon": false,
+      },
+      "source": Object {
+        "end": undefined,
+        "inputId": 0,
+        "start": Object {
+          "column": 39,
+          "line": 5,
+          "offset": 89,
+        },
+      },
+      "type": "root",
+    },
+  ],
+  "raws": Object {},
+  "source": Object {
+    "end": undefined,
+    "inputId": 0,
+    "start": Object {
+      "column": 1,
+      "line": 1,
+    },
+  },
+  "type": "document",
+}
+`;
+
 exports[`AST tests inline-html.md ast 1`] = `
 Object {
   "inputs": Array [
@@ -2322,7 +2429,6 @@ Object {
       ],
       "raws": Object {
         "after": "",
-        "codeAfter": "",
         "codeBefore": "# HTML Inline Styles
 
 <div style=\\"",

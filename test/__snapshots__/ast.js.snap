@@ -1403,6 +1403,97 @@ Object {
 }
 `;
 
+exports[`AST tests frontmatter.md ast 1`] = `
+Object {
+  "inputs": Array [
+    Object {
+      "css": " .b {}",
+      "file": "/frontmatter.md",
+      "hasBOM": false,
+    },
+    Object {
+      "css": "---
+style: <style> .a {} </style>
+---
+
+# Frontmatter
+
+<style> .b {} </style>
+",
+      "file": "/frontmatter.md",
+      "hasBOM": false,
+    },
+  ],
+  "nodes": Array [
+    Object {
+      "document": "$document",
+      "indexes": Object {},
+      "lastEach": 2,
+      "nodes": Array [
+        Object {
+          "indexes": Object {},
+          "lastEach": 2,
+          "nodes": Array [],
+          "raws": Object {
+            "after": "",
+            "before": " ",
+            "between": " ",
+          },
+          "selector": ".b",
+          "source": Object {
+            "end": Object {
+              "column": 13,
+              "line": 7,
+              "offset": 66,
+            },
+            "inputId": 0,
+            "start": Object {
+              "column": 9,
+              "line": 7,
+              "offset": 62,
+            },
+          },
+          "type": "rule",
+        },
+      ],
+      "raws": Object {
+        "after": "",
+        "codeAfter": " </style>
+",
+        "codeBefore": "---
+style: <style> .a {} </style>
+---
+
+# Frontmatter
+
+<style>",
+        "semicolon": false,
+      },
+      "source": Object {
+        "end": undefined,
+        "inputId": 0,
+        "start": Object {
+          "column": 8,
+          "line": 7,
+          "offset": 61,
+        },
+      },
+      "type": "root",
+    },
+  ],
+  "raws": Object {},
+  "source": Object {
+    "end": undefined,
+    "inputId": 0,
+    "start": Object {
+      "column": 1,
+      "line": 1,
+    },
+  },
+  "type": "document",
+}
+`;
+
 exports[`AST tests html-in-md.md ast 1`] = `
 Object {
   "inputs": Array [

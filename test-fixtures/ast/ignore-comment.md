@@ -14,14 +14,14 @@ a {
 }
 ```
 
-<!-- postcss-ignore -->
+<!-- postcss-ignore description -->
 ```css
 .c {
   color: red;
 }
 ```
 
-<!--   postcss-ignore   -->
+<!--  description   postcss-ignore   -->
 
 
 

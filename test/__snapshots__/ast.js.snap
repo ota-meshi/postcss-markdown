@@ -2267,6 +2267,140 @@ a {
 }
 `;
 
+exports[`AST tests inline-html.md ast 1`] = `
+Object {
+  "inputs": Array [
+    Object {
+      "css": "color: red;",
+      "file": "/inline-html.md",
+      "hasBOM": false,
+    },
+    Object {
+      "css": "color: red;",
+      "file": "/inline-html.md",
+      "hasBOM": false,
+    },
+    Object {
+      "css": "# HTML Inline Styles
+
+<div style=\\"color: red;\\"></div>
+
+<div><div style=\\"color: red;\\"></div></div>
+",
+      "file": "/inline-html.md",
+      "hasBOM": false,
+    },
+  ],
+  "nodes": Array [
+    Object {
+      "document": "$document",
+      "indexes": Object {},
+      "lastEach": 2,
+      "nodes": Array [
+        Object {
+          "prop": "color",
+          "raws": Object {
+            "before": "",
+            "between": ": ",
+          },
+          "source": Object {
+            "end": Object {
+              "column": 23,
+              "line": 3,
+              "offset": 44,
+            },
+            "inputId": 0,
+            "start": Object {
+              "column": 13,
+              "line": 3,
+              "offset": 34,
+            },
+          },
+          "type": "decl",
+          "value": "red",
+        },
+      ],
+      "raws": Object {
+        "after": "",
+        "codeAfter": "",
+        "codeBefore": "# HTML Inline Styles
+
+<div style=\\"",
+        "semicolon": true,
+      },
+      "source": Object {
+        "end": undefined,
+        "inputId": 0,
+        "start": Object {
+          "column": 13,
+          "line": 3,
+          "offset": 34,
+        },
+      },
+      "type": "root",
+    },
+    Object {
+      "document": "$document",
+      "indexes": Object {},
+      "lastEach": 2,
+      "nodes": Array [
+        Object {
+          "prop": "color",
+          "raws": Object {
+            "before": "",
+            "between": ": ",
+          },
+          "source": Object {
+            "end": Object {
+              "column": 28,
+              "line": 5,
+              "offset": 82,
+            },
+            "inputId": 0,
+            "start": Object {
+              "column": 18,
+              "line": 5,
+              "offset": 72,
+            },
+          },
+          "type": "decl",
+          "value": "red",
+        },
+      ],
+      "raws": Object {
+        "after": "",
+        "codeAfter": "\\"></div></div>
+",
+        "codeBefore": "\\"></div>
+
+<div><div style=\\"",
+        "semicolon": true,
+      },
+      "source": Object {
+        "end": undefined,
+        "inputId": 0,
+        "start": Object {
+          "column": 18,
+          "line": 5,
+          "offset": 72,
+        },
+      },
+      "type": "root",
+    },
+  ],
+  "raws": Object {},
+  "source": Object {
+    "end": undefined,
+    "inputId": 0,
+    "start": Object {
+      "column": 1,
+      "line": 1,
+    },
+  },
+  "type": "document",
+}
+`;
+
 exports[`AST tests nest.md ast 1`] = `
 Object {
   "inputs": Array [

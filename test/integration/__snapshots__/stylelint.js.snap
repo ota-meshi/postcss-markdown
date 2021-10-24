@@ -39,6 +39,66 @@ exports[`Integration with stylelint stylelint --fix with markdown block-in-block
 "
 `;
 
+exports[`Integration with stylelint stylelint --fix with markdown block-in-list.md 1`] = `
+"# Header
+
+## Unordered List
+
+- \`\`\`css
+  a {
+    color: red;
+  }
+  \`\`\`
+
++ \`\`\`css
+  .b { color: red; }
+
+  \`\`\`
+
+* \`\`\`css
+  .c { color: red; }
+
+  \`\`\`
+
+## Ordered List
+
+1. \`\`\`css
+  .d {
+    color: red;
+  }
+   \`\`\`
+
+1. \`\`\`css
+  .e { color: red; }
+
+   \`\`\`
+
+2. \`\`\`css
+  .f { color: red; }
+
+   \`\`\`
+"
+`;
+
+exports[`Integration with stylelint stylelint --fix with markdown block-in-list-blockquote.md 1`] = `
+"# Header
+
+## List in Blockquote
+
+> - \`\`\`css
+>   a {
+>     user-select: none;
+>   }
+>   \`\`\`
+>
+>   1. \`\`\`css
+>       a {
+>         user-select: none;
+>       }
+>      \`\`\`
+"
+`;
+
 exports[`Integration with stylelint stylelint --fix with markdown nest.md 1`] = `
 "# Header
 
@@ -166,6 +226,128 @@ Array [
     "rule": "indentation",
     "severity": "error",
     "text": "Expected indentation of 4 spaces (indentation)",
+  },
+]
+`;
+
+exports[`Integration with stylelint stylelint with markdown block-in-list.md 1`] = `
+Array [
+  Object {
+    "column": 3,
+    "line": 9,
+    "rule": "block-closing-brace-empty-line-before",
+    "severity": "error",
+    "text": "Unexpected empty line before closing brace (block-closing-brace-empty-line-before)",
+  },
+  Object {
+    "column": 4,
+    "line": 29,
+    "rule": "block-closing-brace-empty-line-before",
+    "severity": "error",
+    "text": "Unexpected empty line before closing brace (block-closing-brace-empty-line-before)",
+  },
+  Object {
+    "column": 1,
+    "line": 18,
+    "rule": "no-empty-first-line",
+    "severity": "error",
+    "text": "Unexpected empty line (no-empty-first-line)",
+  },
+  Object {
+    "column": 1,
+    "line": 38,
+    "rule": "no-empty-first-line",
+    "severity": "error",
+    "text": "Unexpected empty line (no-empty-first-line)",
+  },
+  Object {
+    "column": 4,
+    "line": 7,
+    "rule": "indentation",
+    "severity": "error",
+    "text": "Expected indentation of 4 spaces (indentation)",
+  },
+  Object {
+    "column": 4,
+    "line": 26,
+    "rule": "indentation",
+    "severity": "error",
+    "text": "Expected indentation of 2 spaces (indentation)",
+  },
+  Object {
+    "column": 4,
+    "line": 29,
+    "rule": "indentation",
+    "severity": "error",
+    "text": "Expected indentation of 2 spaces (indentation)",
+  },
+  Object {
+    "column": 4,
+    "line": 27,
+    "rule": "indentation",
+    "severity": "error",
+    "text": "Expected indentation of 4 spaces (indentation)",
+  },
+  Object {
+    "column": 4,
+    "line": 33,
+    "rule": "indentation",
+    "severity": "error",
+    "text": "Expected indentation of 2 spaces (indentation)",
+  },
+  Object {
+    "column": 4,
+    "line": 39,
+    "rule": "indentation",
+    "severity": "error",
+    "text": "Expected indentation of 2 spaces (indentation)",
+  },
+]
+`;
+
+exports[`Integration with stylelint stylelint with markdown block-in-list-blockquote.md 1`] = `
+Array [
+  Object {
+    "column": 5,
+    "line": 9,
+    "rule": "block-closing-brace-empty-line-before",
+    "severity": "error",
+    "text": "Unexpected empty line before closing brace (block-closing-brace-empty-line-before)",
+  },
+  Object {
+    "column": 8,
+    "line": 16,
+    "rule": "block-closing-brace-empty-line-before",
+    "severity": "error",
+    "text": "Unexpected empty line before closing brace (block-closing-brace-empty-line-before)",
+  },
+  Object {
+    "column": 5,
+    "line": 7,
+    "rule": "indentation",
+    "severity": "error",
+    "text": "Expected indentation of 6 spaces (indentation)",
+  },
+  Object {
+    "column": 8,
+    "line": 13,
+    "rule": "indentation",
+    "severity": "error",
+    "text": "Expected indentation of 8 spaces (indentation)",
+  },
+  Object {
+    "column": 8,
+    "line": 16,
+    "rule": "indentation",
+    "severity": "error",
+    "text": "Expected indentation of 8 spaces (indentation)",
+  },
+  Object {
+    "column": 8,
+    "line": 14,
+    "rule": "indentation",
+    "severity": "error",
+    "text": "Expected indentation of 10 spaces (indentation)",
   },
 ]
 `;

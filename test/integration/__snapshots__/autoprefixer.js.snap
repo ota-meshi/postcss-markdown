@@ -1,5 +1,139 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Integration with autoprefixer autoprefixer with markdown block-in-blockquote.md 1`] = `
+"# Header
+
+## Blockquote
+
+> \`\`\`css
+> a {
+>   -webkit-user-select: none;
+>      -moz-user-select: none;
+>       -ms-user-select: none;
+>           user-select: none;
+>   }
+> \`\`\`
+
+## Nesting Blockquote
+
+> > \`\`\`css
+> > a {
+> >   -webkit-user-select: none;
+> >      -moz-user-select: none;
+> >       -ms-user-select: none;
+> >           user-select: none;
+> >   }
+> > \`\`\`
+
+## Blockquote With HTML
+
+> \`\`\`html
+> <style>
+> a {
+>   -webkit-user-select: none;
+>      -moz-user-select: none;
+>       -ms-user-select: none;
+>           user-select: none;
+>   }
+> </style>
+> \`\`\`
+
+## Blockquote With Blank
+
+> > \`\`\`css
+> > a {
+> > 
+> >   -webkit-user-select: none;
+> >
+> >      -moz-user-select: none;
+> > 
+> >       -ms-user-select: none;
+> > 
+> >           user-select: none;
+> > 
+> >   }
+> > \`\`\`
+"
+`;
+
+exports[`Integration with autoprefixer autoprefixer with markdown block-in-list.md 1`] = `
+"# Header
+
+## Unordered List
+
+- \`\`\`css
+  a {
+   -webkit-user-select: none;
+      -moz-user-select: none;
+       -ms-user-select: none;
+           user-select: none;
+
+  }
+  \`\`\`
+
++ \`\`\`css
+  .b { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+
+  \`\`\`
+
+* \`\`\`css
+
+  .c { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+
+  \`\`\`
+
+## Ordered List
+
+1. \`\`\`css
+   .d {
+   -webkit-user-select: none;
+      -moz-user-select: none;
+       -ms-user-select: none;
+           user-select: none;
+
+   }
+   \`\`\`
+
+1. \`\`\`css
+   .e { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+
+   \`\`\`
+
+2. \`\`\`css
+
+   .f { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+
+   \`\`\`
+"
+`;
+
+exports[`Integration with autoprefixer autoprefixer with markdown block-in-list-blockquote.md 1`] = `
+"# Header
+
+## List in Blockquote
+
+> - \`\`\`css
+>   a {
+>   -webkit-user-select: none;
+>      -moz-user-select: none;
+>       -ms-user-select: none;
+>           user-select: none;
+>   
+>   }
+>   \`\`\`
+>
+>   1. \`\`\`css
+>      a {
+>      -webkit-user-select: none;
+>         -moz-user-select: none;
+>          -ms-user-select: none;
+>              user-select: none;
+>      
+>      }
+>      \`\`\`
+"
+`;
+
 exports[`Integration with autoprefixer autoprefixer with markdown test.md 1`] = `
 "# title
 

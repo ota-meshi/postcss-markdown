@@ -42,6 +42,48 @@ describe("syntax option tests", () => {
 		]);
 		expect(document.toString()).to.equal(md);
 	});
+	it("syntax option for HTML", () => {
+		const md = [
+			"```html",
+			"<style lang='s'>",
+			".foo",
+			"  color red",
+			"</style>",
+			"```",
+			"",
+			"<style lang='css'>",
+			"// comment",
+			".foo { color: pink;// comment",
+			"}",
+			"  .bar {}",
+			"</style>",
+		].join("\n");
+		const document = syntax({
+			s: require("postcss-styl"),
+			css: require("postcss-scss"),
+		}).parse(md, {
+			from: "markdown.md",
+		});
+		expect(document.source).to.haveOwnProperty("lang", "markdown");
+		expect(document.nodes).to.have.lengthOf(2);
+		expect(document.nodes[0].source).to.haveOwnProperty("lang", "s");
+		expect(document.nodes[0].nodes.map(simplNode)).to.deep.equals([
+			{
+				type: "rule",
+				nodes: [{ type: "decl" }],
+			},
+		]);
+		expect(document.nodes[1].source).to.haveOwnProperty("lang", "css");
+		expect(document.nodes[1].nodes.map(simplNode)).to.deep.equals([
+			{ type: "comment" },
+			{
+				type: "rule",
+				nodes: [{ type: "decl" }, { type: "comment" }],
+			},
+			{ type: "rule", nodes: [] },
+		]);
+		expect(document.toString()).to.equal(md);
+	});
 	it("define rules option", () => {
 		const md = [
 			//

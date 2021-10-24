@@ -407,4 +407,38 @@ describe("api tests", () => {
 				);
 			});
 	});
+	it("stringify for nodes array for empty block in blockquote", () => {
+		function nodesArrayPlugin() {
+			return {
+				postcssPlugin: "nodesArrayPlugin",
+				Root(root) {
+					root.nodes = postcss.parse("b {}").nodes;
+				},
+			};
+		}
+
+		nodesArrayPlugin.postcss = true;
+
+		const md = [
+			//
+			"> ```css",
+			"> ```",
+		].join("\n");
+		return postcss([nodesArrayPlugin])
+			.process(md, {
+				syntax,
+				from: "push.md",
+			})
+			.then((result) => {
+				expect(result.root.source).to.haveOwnProperty("lang", "markdown");
+				expect(result.content).to.equal(
+					[
+						//
+						"> ```css",
+						"> b {}",
+						"> ```",
+					].join("\n")
+				);
+			});
+	});
 });

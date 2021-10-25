@@ -2465,6 +2465,32 @@ Object {
 }
 `;
 
+exports[`AST tests inline-block.md ast 1`] = `
+Object {
+  "inputs": Array [
+    Object {
+      "css": "# Inline Block
+
+\`<style>\` \`<style>.a{}</style>\`
+",
+      "file": "/inline-block.md",
+      "hasBOM": false,
+    },
+  ],
+  "nodes": Array [],
+  "raws": Object {},
+  "source": Object {
+    "end": undefined,
+    "inputId": 0,
+    "start": Object {
+      "column": 1,
+      "line": 1,
+    },
+  },
+  "type": "document",
+}
+`;
+
 exports[`AST tests inline-html.md ast 1`] = `
 Object {
   "inputs": Array [

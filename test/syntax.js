@@ -84,43 +84,6 @@ describe("syntax option tests", () => {
 		]);
 		expect(document.toString()).to.equal(md);
 	});
-	it("define rules option", () => {
-		const md = [
-			//
-			"```foo",
-			"// comment",
-			"```",
-		].join("\n");
-		const parser = syntax({
-			rules: [
-				{
-					test: /^foo$/,
-					lang: "foo",
-				},
-			],
-		});
-		expect(() =>
-			parser.parse(md, {
-				from: "markdown.md",
-			})
-		).to.throw("Unknown word");
-	});
-	it("define syntax option", () => {
-		const md = [
-			//
-			"```foo",
-			"// comment",
-			"```",
-		].join("\n");
-		const parser = syntax({
-			foo: "postcss-foo",
-		});
-		expect(() =>
-			parser.parse(md, {
-				from: "markdown.md",
-			})
-		).to.throw('Cannot resolve module "postcss-foo"');
-	});
 	it("not define syntax option", () => {
 		const md = [
 			//

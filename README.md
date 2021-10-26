@@ -18,7 +18,7 @@
 First thing's first, install the module:
 
 ```bash
-npm install postcss-markdown@next postcss-html --save-dev
+npm install postcss-markdown@next --save-dev
 ```
 
 If you want support SCSS/SASS/LESS/SugarSS syntax, you need to install the corresponding module.

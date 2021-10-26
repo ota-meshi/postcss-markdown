@@ -119,7 +119,7 @@ describe("syntax option tests", () => {
 			parser.parse(md, {
 				from: "markdown.md",
 			})
-		).to.throw("The module cannot be loaded: postcss-foo");
+		).to.throw('Cannot resolve module "postcss-foo"');
 	});
 	it("not define syntax option", () => {
 		const md = [

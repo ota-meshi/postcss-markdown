@@ -153,3 +153,23 @@ You can use it by configuring your `stylelint` config as follows:
 ```
 
 [stylelint]: https://stylelint.io/
+
+### Editor integrations
+
+#### Visual Studio Code
+
+Use the [stylelint.vscode-stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint) extension that [Stylelint] provides officially.
+
+You have to configure the `stylelint.validate` option of the extension to check `.md` files, because the extension does not check the `*.md` file by default.
+
+Example **.vscode/settings.json**:
+
+```jsonc
+{
+  "stylelint.validate": [
+      ...,
+      // ↓ Add "markdown" language.
+      "markdown"
+  ]
+```
+

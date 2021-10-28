@@ -1,7 +1,7 @@
 # PostCSS Markdown Syntax
 
 [![NPM license](https://img.shields.io/npm/l/postcss-markdown.svg)](https://www.npmjs.com/package/postcss-markdown)
-[![NPM version](https://img.shields.io/npm/v/postcss-markdown/next.svg?style=flat-square)](https://www.npmjs.com/package/postcss-markdown/v/next)
+[![NPM version](https://img.shields.io/npm/v/postcss-markdown.svg?style=flat-square)](https://www.npmjs.com/package/postcss-markdown)
 [![NPM downloads](https://img.shields.io/npm/dw/postcss-markdown.svg)](http://www.npmtrends.com/postcss-markdown)
 [![NPM downloads](https://img.shields.io/npm/dm/postcss-markdown.svg)](http://www.npmtrends.com/postcss-markdown)
 [![NPM downloads](https://img.shields.io/npm/dy/postcss-markdown.svg)](http://www.npmtrends.com/postcss-markdown)
@@ -18,7 +18,7 @@
 First thing's first, install the module:
 
 ```bash
-npm install postcss-markdown@next --save-dev
+npm install postcss-markdown --save-dev
 ```
 
 If you want support SCSS/SASS/LESS/SugarSS syntax, you need to install the corresponding module.

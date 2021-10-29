@@ -99,6 +99,27 @@ exports[`Integration with stylelint stylelint --fix with markdown block-in-list-
 "
 `;
 
+exports[`Integration with stylelint stylelint --fix with markdown lang-postcss.md 1`] = `
+"# Lang PostCss
+
+\`\`\`postcss
+a {
+  a {
+    color: red;
+  }
+}
+\`\`\`
+
+\`\`\`pcss
+a {
+  a {
+    color: red;
+  }
+}
+\`\`\`
+"
+`;
+
 exports[`Integration with stylelint stylelint --fix with markdown nest.md 1`] = `
 "# Header
 
@@ -348,6 +369,67 @@ Array [
     "rule": "indentation",
     "severity": "error",
     "text": "Expected indentation of 10 spaces (indentation)",
+  },
+]
+`;
+
+exports[`Integration with stylelint stylelint with markdown lang-postcss.md 1`] = `
+Array [
+  Object {
+    "column": 10,
+    "line": 6,
+    "rule": "declaration-block-trailing-semicolon",
+    "severity": "error",
+    "text": "Expected a trailing semicolon (declaration-block-trailing-semicolon)",
+  },
+  Object {
+    "column": 10,
+    "line": 14,
+    "rule": "declaration-block-trailing-semicolon",
+    "severity": "error",
+    "text": "Expected a trailing semicolon (declaration-block-trailing-semicolon)",
+  },
+  Object {
+    "column": 1,
+    "line": 5,
+    "rule": "indentation",
+    "severity": "error",
+    "text": "Expected indentation of 2 spaces (indentation)",
+  },
+  Object {
+    "column": 1,
+    "line": 7,
+    "rule": "indentation",
+    "severity": "error",
+    "text": "Expected indentation of 2 spaces (indentation)",
+  },
+  Object {
+    "column": 1,
+    "line": 6,
+    "rule": "indentation",
+    "severity": "error",
+    "text": "Expected indentation of 4 spaces (indentation)",
+  },
+  Object {
+    "column": 1,
+    "line": 13,
+    "rule": "indentation",
+    "severity": "error",
+    "text": "Expected indentation of 2 spaces (indentation)",
+  },
+  Object {
+    "column": 1,
+    "line": 15,
+    "rule": "indentation",
+    "severity": "error",
+    "text": "Expected indentation of 2 spaces (indentation)",
+  },
+  Object {
+    "column": 1,
+    "line": 14,
+    "rule": "indentation",
+    "severity": "error",
+    "text": "Expected indentation of 4 spaces (indentation)",
   },
 ]
 `;

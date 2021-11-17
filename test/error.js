@@ -5,6 +5,56 @@ const expect = require("chai").expect;
 const syntax = require("../");
 
 describe("error tests", () => {
+	it("single line syntax error", () => {
+		const md = [
+			//
+			"<style>a {</style>",
+		].join("\n");
+		expect(() => {
+			syntax.parse(md, {
+				from: "SyntaxError.vue",
+			});
+		})
+			.to.throw(/SyntaxError.vue:1:8: Unclosed block\b/)
+			.with.include({ line: 1, column: 8 })
+			.have.property("input")
+			.include({ line: 1, column: 8 });
+	});
+
+	it("multi line syntax error", () => {
+		const md = [
+			//
+			"",
+			"",
+			"<style>a {</style>",
+		].join("\n");
+		expect(() => {
+			syntax.parse(md, {
+				from: "SyntaxError.html",
+			});
+		})
+			.to.throw(/SyntaxError.html:3:8: Unclosed block\b/)
+			.with.include({ line: 3, column: 8 })
+			.have.property("input")
+			.include({ line: 3, column: 8 });
+	});
+	it("multi line syntax error with block", () => {
+		const md = [
+			//
+			"```css",
+			"a {",
+			"```",
+		].join("\n");
+		expect(() => {
+			syntax.parse(md, {
+				from: "SyntaxError.html",
+			});
+		})
+			.to.throw(/SyntaxError.html:2:1: Unclosed block\b/)
+			.with.include({ line: 2, column: 1 })
+			.have.property("input")
+			.include({ line: 2, column: 1 });
+	});
 	it("require error", () => {
 		const md = [
 			//

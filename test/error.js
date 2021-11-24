@@ -19,6 +19,20 @@ describe("error tests", () => {
 			.with.include({ line: 1, column: 8 })
 			.have.property("input")
 			.include({ line: 1, column: 8 });
+
+		const md2 = [
+			//
+			"<style>foo foo</style>",
+		].join("\n");
+		expect(() => {
+			syntax.parse(md2, {
+				from: "SyntaxError.vue",
+			});
+		})
+			.to.throw(/SyntaxError.vue:1:8: Unknown word\b/)
+			.with.include({ line: 1, column: 8, endLine: 1, endColumn: 11 })
+			.have.property("input")
+			.include({ line: 1, column: 8, endLine: 1, endColumn: 11 });
 	});
 
 	it("multi line syntax error", () => {
@@ -54,6 +68,22 @@ describe("error tests", () => {
 			.with.include({ line: 2, column: 1 })
 			.have.property("input")
 			.include({ line: 2, column: 1 });
+
+		const md2 = [
+			//
+			"```css",
+			"foo foo",
+			"```",
+		].join("\n");
+		expect(() => {
+			syntax.parse(md2, {
+				from: "SyntaxError.html",
+			});
+		})
+			.to.throw(/SyntaxError.html:2:1: Unknown word\b/)
+			.with.include({ line: 2, column: 1, endLine: 2, endColumn: 4 })
+			.have.property("input")
+			.include({ line: 2, column: 1, endLine: 2, endColumn: 4 });
 	});
 	it("require error", () => {
 		const md = [

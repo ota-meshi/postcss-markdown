@@ -57,7 +57,7 @@
     "mdast-util-from-markdown": "^0.8.5",
     "mdast-util-frontmatter": "^0.2.0",
     "micromark-extension-frontmatter": "^0.2.2",
-    "postcss": "^8.3.9",
+    "postcss": "^8.4.0",
     "postcss-safe-parser": "^6.0.0"
   },
   "devDependencies": {
@@ -78,7 +78,7 @@
     "mocha": "^9.0.0",
     "mocha-chai-jest-snapshot": "^1.1.3",
     "nyc": "^15.1.0",
-    "postcss-html": "^1.1.0",
+    "postcss-html": "^1.3.0",
     "postcss-less": "^5.0.0",
     "postcss-scss": "^4.0.0",
     "postcss-styl": "^0.9.0",

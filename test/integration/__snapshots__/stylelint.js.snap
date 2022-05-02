@@ -208,6 +208,8 @@ exports[`Integration with stylelint stylelint with markdown block-in-blockquote.
 Array [
   Object {
     "column": 7,
+    "endColumn": 8,
+    "endLine": 36,
     "line": 36,
     "rule": "block-closing-brace-empty-line-before",
     "severity": "error",
@@ -215,6 +217,8 @@ Array [
   },
   Object {
     "column": 7,
+    "endColumn": 18,
+    "endLine": 34,
     "line": 34,
     "rule": "declaration-empty-line-before",
     "severity": "error",
@@ -222,6 +226,8 @@ Array [
   },
   Object {
     "column": 5,
+    "endColumn": 6,
+    "endLine": 8,
     "line": 8,
     "rule": "indentation",
     "severity": "error",
@@ -229,6 +235,8 @@ Array [
   },
   Object {
     "column": 7,
+    "endColumn": 8,
+    "endLine": 16,
     "line": 16,
     "rule": "indentation",
     "severity": "error",
@@ -236,6 +244,8 @@ Array [
   },
   Object {
     "column": 5,
+    "endColumn": 6,
+    "endLine": 25,
     "line": 25,
     "rule": "indentation",
     "severity": "error",
@@ -243,6 +253,8 @@ Array [
   },
   Object {
     "column": 7,
+    "endColumn": 8,
+    "endLine": 36,
     "line": 36,
     "rule": "indentation",
     "severity": "error",
@@ -255,6 +267,8 @@ exports[`Integration with stylelint stylelint with markdown block-in-list.md 1`]
 Array [
   Object {
     "column": 3,
+    "endColumn": 4,
+    "endLine": 9,
     "line": 9,
     "rule": "block-closing-brace-empty-line-before",
     "severity": "error",
@@ -262,6 +276,8 @@ Array [
   },
   Object {
     "column": 4,
+    "endColumn": 5,
+    "endLine": 29,
     "line": 29,
     "rule": "block-closing-brace-empty-line-before",
     "severity": "error",
@@ -269,6 +285,8 @@ Array [
   },
   Object {
     "column": 1,
+    "endColumn": 2,
+    "endLine": 18,
     "line": 18,
     "rule": "no-empty-first-line",
     "severity": "error",
@@ -276,6 +294,8 @@ Array [
   },
   Object {
     "column": 1,
+    "endColumn": 2,
+    "endLine": 38,
     "line": 38,
     "rule": "no-empty-first-line",
     "severity": "error",
@@ -283,6 +303,8 @@ Array [
   },
   Object {
     "column": 4,
+    "endColumn": 15,
+    "endLine": 7,
     "line": 7,
     "rule": "indentation",
     "severity": "error",
@@ -290,6 +312,8 @@ Array [
   },
   Object {
     "column": 4,
+    "endColumn": 5,
+    "endLine": 29,
     "line": 26,
     "rule": "indentation",
     "severity": "error",
@@ -297,6 +321,8 @@ Array [
   },
   Object {
     "column": 4,
+    "endColumn": 5,
+    "endLine": 29,
     "line": 29,
     "rule": "indentation",
     "severity": "error",
@@ -304,6 +330,8 @@ Array [
   },
   Object {
     "column": 4,
+    "endColumn": 15,
+    "endLine": 27,
     "line": 27,
     "rule": "indentation",
     "severity": "error",
@@ -311,6 +339,8 @@ Array [
   },
   Object {
     "column": 4,
+    "endColumn": 22,
+    "endLine": 33,
     "line": 33,
     "rule": "indentation",
     "severity": "error",
@@ -318,6 +348,8 @@ Array [
   },
   Object {
     "column": 4,
+    "endColumn": 22,
+    "endLine": 39,
     "line": 39,
     "rule": "indentation",
     "severity": "error",
@@ -330,6 +362,8 @@ exports[`Integration with stylelint stylelint with markdown block-in-list-blockq
 Array [
   Object {
     "column": 5,
+    "endColumn": 6,
+    "endLine": 9,
     "line": 9,
     "rule": "block-closing-brace-empty-line-before",
     "severity": "error",
@@ -337,6 +371,8 @@ Array [
   },
   Object {
     "column": 8,
+    "endColumn": 9,
+    "endLine": 16,
     "line": 16,
     "rule": "block-closing-brace-empty-line-before",
     "severity": "error",
@@ -344,6 +380,8 @@ Array [
   },
   Object {
     "column": 5,
+    "endColumn": 23,
+    "endLine": 7,
     "line": 7,
     "rule": "indentation",
     "severity": "error",
@@ -351,6 +389,8 @@ Array [
   },
   Object {
     "column": 8,
+    "endColumn": 9,
+    "endLine": 16,
     "line": 13,
     "rule": "indentation",
     "severity": "error",
@@ -358,6 +398,8 @@ Array [
   },
   Object {
     "column": 8,
+    "endColumn": 9,
+    "endLine": 16,
     "line": 16,
     "rule": "indentation",
     "severity": "error",
@@ -365,6 +407,8 @@ Array [
   },
   Object {
     "column": 8,
+    "endColumn": 26,
+    "endLine": 14,
     "line": 14,
     "rule": "indentation",
     "severity": "error",
@@ -377,6 +421,8 @@ exports[`Integration with stylelint stylelint with markdown lang-postcss.md 1`] 
 Array [
   Object {
     "column": 10,
+    "endColumn": 11,
+    "endLine": 6,
     "line": 6,
     "rule": "declaration-block-trailing-semicolon",
     "severity": "error",
@@ -384,6 +430,8 @@ Array [
   },
   Object {
     "column": 10,
+    "endColumn": 11,
+    "endLine": 14,
     "line": 14,
     "rule": "declaration-block-trailing-semicolon",
     "severity": "error",
@@ -391,6 +439,8 @@ Array [
   },
   Object {
     "column": 1,
+    "endColumn": 2,
+    "endLine": 7,
     "line": 5,
     "rule": "indentation",
     "severity": "error",
@@ -398,6 +448,8 @@ Array [
   },
   Object {
     "column": 1,
+    "endColumn": 2,
+    "endLine": 7,
     "line": 7,
     "rule": "indentation",
     "severity": "error",
@@ -405,6 +457,8 @@ Array [
   },
   Object {
     "column": 1,
+    "endColumn": 11,
+    "endLine": 6,
     "line": 6,
     "rule": "indentation",
     "severity": "error",
@@ -412,6 +466,8 @@ Array [
   },
   Object {
     "column": 1,
+    "endColumn": 2,
+    "endLine": 15,
     "line": 13,
     "rule": "indentation",
     "severity": "error",
@@ -419,6 +475,8 @@ Array [
   },
   Object {
     "column": 1,
+    "endColumn": 2,
+    "endLine": 15,
     "line": 15,
     "rule": "indentation",
     "severity": "error",
@@ -426,6 +484,8 @@ Array [
   },
   Object {
     "column": 1,
+    "endColumn": 11,
+    "endLine": 14,
     "line": 14,
     "rule": "indentation",
     "severity": "error",
@@ -438,6 +498,8 @@ exports[`Integration with stylelint stylelint with markdown nest.md 1`] = `
 Array [
   Object {
     "column": 16,
+    "endColumn": 17,
+    "endLine": 7,
     "line": 7,
     "rule": "declaration-block-trailing-semicolon",
     "severity": "error",
@@ -445,6 +507,8 @@ Array [
   },
   Object {
     "column": 18,
+    "endColumn": 19,
+    "endLine": 15,
     "line": 15,
     "rule": "declaration-block-trailing-semicolon",
     "severity": "error",
@@ -452,6 +516,8 @@ Array [
   },
   Object {
     "column": 16,
+    "endColumn": 17,
+    "endLine": 23,
     "line": 23,
     "rule": "declaration-block-trailing-semicolon",
     "severity": "error",
@@ -459,6 +525,8 @@ Array [
   },
   Object {
     "column": 14,
+    "endColumn": 15,
+    "endLine": 31,
     "line": 31,
     "rule": "declaration-block-trailing-semicolon",
     "severity": "error",
@@ -466,6 +534,8 @@ Array [
   },
   Object {
     "column": 14,
+    "endColumn": 15,
+    "endLine": 41,
     "line": 41,
     "rule": "declaration-block-trailing-semicolon",
     "severity": "error",
@@ -473,6 +543,8 @@ Array [
   },
   Object {
     "column": 1,
+    "endColumn": 1,
+    "endLine": 40,
     "line": 39,
     "rule": "max-empty-lines",
     "severity": "error",
@@ -480,6 +552,8 @@ Array [
   },
   Object {
     "column": 1,
+    "endColumn": 2,
+    "endLine": 38,
     "line": 38,
     "rule": "no-empty-first-line",
     "severity": "error",
@@ -487,6 +561,8 @@ Array [
   },
   Object {
     "column": 4,
+    "endColumn": 5,
+    "endLine": 24,
     "line": 24,
     "rule": "indentation",
     "severity": "error",
@@ -494,6 +570,8 @@ Array [
   },
   Object {
     "column": 5,
+    "endColumn": 6,
+    "endLine": 32,
     "line": 32,
     "rule": "indentation",
     "severity": "error",
@@ -501,6 +579,8 @@ Array [
   },
   Object {
     "column": 5,
+    "endColumn": 6,
+    "endLine": 42,
     "line": 42,
     "rule": "indentation",
     "severity": "error",
@@ -513,6 +593,8 @@ exports[`Integration with stylelint stylelint with markdown test.md 1`] = `
 Array [
   Object {
     "column": 12,
+    "endColumn": 13,
+    "endLine": 5,
     "line": 5,
     "rule": "declaration-block-trailing-semicolon",
     "severity": "error",
@@ -520,6 +602,8 @@ Array [
   },
   Object {
     "column": 12,
+    "endColumn": 13,
+    "endLine": 22,
     "line": 22,
     "rule": "declaration-block-trailing-semicolon",
     "severity": "error",

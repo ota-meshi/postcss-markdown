@@ -116,14 +116,12 @@ describe("api tests", () => {
 				expect(result.content).to.equal(
 					[
 						"```css",
-						"",
 						"b {}",
 						"a {",
 						"\tdisplay: flex;",
 						"}",
 						"```",
 						"```css",
-						"",
 						"b {}",
 						"a {",
 						"\tdisplay: flex;",

@@ -9,7 +9,6 @@ exports[`Integration with autoprefixer autoprefixer with markdown block-in-block
 > a {
 >   -webkit-user-select: none;
 >      -moz-user-select: none;
->       -ms-user-select: none;
 >           user-select: none;
 >   }
 > \`\`\`
@@ -20,7 +19,6 @@ exports[`Integration with autoprefixer autoprefixer with markdown block-in-block
 > > a {
 > >   -webkit-user-select: none;
 > >      -moz-user-select: none;
-> >       -ms-user-select: none;
 > >           user-select: none;
 > >   }
 > > \`\`\`
@@ -32,7 +30,6 @@ exports[`Integration with autoprefixer autoprefixer with markdown block-in-block
 > a {
 >   -webkit-user-select: none;
 >      -moz-user-select: none;
->       -ms-user-select: none;
 >           user-select: none;
 >   }
 > </style>
@@ -46,8 +43,6 @@ exports[`Integration with autoprefixer autoprefixer with markdown block-in-block
 > >   -webkit-user-select: none;
 > >
 > >      -moz-user-select: none;
-> > 
-> >       -ms-user-select: none;
 > > 
 > >           user-select: none;
 > > 
@@ -65,20 +60,19 @@ exports[`Integration with autoprefixer autoprefixer with markdown block-in-list.
   a {
    -webkit-user-select: none;
       -moz-user-select: none;
-       -ms-user-select: none;
            user-select: none;
 
   }
   \`\`\`
 
 + \`\`\`css
-  .b { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+  .b { -webkit-user-select: none; -moz-user-select: none; user-select: none; }
 
   \`\`\`
 
 * \`\`\`css
 
-  .c { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+  .c { -webkit-user-select: none; -moz-user-select: none; user-select: none; }
 
   \`\`\`
 
@@ -88,20 +82,19 @@ exports[`Integration with autoprefixer autoprefixer with markdown block-in-list.
    .d {
    -webkit-user-select: none;
       -moz-user-select: none;
-       -ms-user-select: none;
            user-select: none;
 
    }
    \`\`\`
 
 1. \`\`\`css
-   .e { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+   .e { -webkit-user-select: none; -moz-user-select: none; user-select: none; }
 
    \`\`\`
 
 2. \`\`\`css
 
-   .f { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+   .f { -webkit-user-select: none; -moz-user-select: none; user-select: none; }
 
    \`\`\`
 "
@@ -116,7 +109,6 @@ exports[`Integration with autoprefixer autoprefixer with markdown block-in-list-
 >   a {
 >   -webkit-user-select: none;
 >      -moz-user-select: none;
->       -ms-user-select: none;
 >           user-select: none;
 >   
 >   }
@@ -126,7 +118,6 @@ exports[`Integration with autoprefixer autoprefixer with markdown block-in-list-
 >      a {
 >      -webkit-user-select: none;
 >         -moz-user-select: none;
->          -ms-user-select: none;
 >              user-select: none;
 >      
 >      }
@@ -139,9 +130,6 @@ exports[`Integration with autoprefixer autoprefixer with markdown test.md 1`] = 
 
 \`\`\`css
 ::-moz-placeholder {
-    color: gray;
-}
-:-ms-input-placeholder {
     color: gray;
 }
 ::placeholder {

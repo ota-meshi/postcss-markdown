@@ -54,7 +54,7 @@
     "update-snap": "mocha \"test/**/*.js\" --no-timeouts --update"
   },
   "dependencies": {
-    "mdast-util-from-markdown": "^0.8.5",
+    "mdast-util-from-markdown": "^1.0.0",
     "mdast-util-frontmatter": "^0.2.0",
     "micromark-extension-frontmatter": "^0.2.2",
     "postcss": "^8.4.0",

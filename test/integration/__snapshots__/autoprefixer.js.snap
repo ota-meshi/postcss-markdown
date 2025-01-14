@@ -131,7 +131,8 @@ exports[`Integration with autoprefixer autoprefixer with markdown test.md 1`] = 
 \`\`\`css
 ::-moz-placeholder {
     color: gray;
-}::placeholder {
+}
+::placeholder {
     color: gray;
 }
 \`\`\`

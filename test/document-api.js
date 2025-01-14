@@ -37,7 +37,7 @@ describe("api tests", () => {
 						"}",
 						"b {}",
 						"```",
-					].join("\n")
+					].join("\n"),
 				);
 			});
 	});
@@ -73,7 +73,7 @@ describe("api tests", () => {
 						"\tdisplay: flex;",
 						"}",
 						"```",
-					].join("\n")
+					].join("\n"),
 				);
 			});
 	});
@@ -87,7 +87,7 @@ describe("api tests", () => {
 						root.last,
 						postcss.rule({
 							selector: "b",
-						})
+						}),
 					);
 				},
 			};
@@ -127,7 +127,7 @@ describe("api tests", () => {
 						"\tdisplay: flex;",
 						"}",
 						"```",
-					].join("\n")
+					].join("\n"),
 				);
 			});
 	});
@@ -141,7 +141,7 @@ describe("api tests", () => {
 						root.first,
 						postcss.rule({
 							selector: "b",
-						})
+						}),
 					);
 				},
 			};
@@ -180,7 +180,7 @@ describe("api tests", () => {
 						"\tdisplay: flex;",
 						"}b {}",
 						"```",
-					].join("\n")
+					].join("\n"),
 				);
 			});
 	});
@@ -219,7 +219,7 @@ describe("api tests", () => {
 						"\tdisplay: flex;",
 						"}",
 						"```",
-					].join("\n")
+					].join("\n"),
 				);
 			});
 	});
@@ -260,7 +260,7 @@ describe("api tests", () => {
 						"\tdisplay: flex;",
 						"}b {}",
 						"```",
-					].join("\n")
+					].join("\n"),
 				);
 			});
 	});
@@ -298,7 +298,7 @@ describe("api tests", () => {
 						"b {}",
 						"",
 						"```",
-					].join("\n")
+					].join("\n"),
 				);
 			});
 	});
@@ -332,7 +332,7 @@ describe("api tests", () => {
 						//
 						"<style>b {}</style>",
 						"<style>b {}</style>",
-					].join("\n")
+					].join("\n"),
 				);
 			});
 	});
@@ -366,7 +366,7 @@ describe("api tests", () => {
 						"```css",
 						"b {}",
 						"```",
-					].join("\n")
+					].join("\n"),
 				);
 			});
 	});
@@ -401,7 +401,7 @@ describe("api tests", () => {
 						"```css",
 						"b {}",
 						"```",
-					].join("\n")
+					].join("\n"),
 				);
 			});
 	});
@@ -435,7 +435,7 @@ describe("api tests", () => {
 						"> ```css",
 						"> b {}",
 						"> ```",
-					].join("\n")
+					].join("\n"),
 				);
 			});
 	});

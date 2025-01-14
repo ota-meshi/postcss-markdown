@@ -12,7 +12,7 @@ chai.use(jestSnapshotPlugin());
 
 const FIXTURE_ROOT = path.resolve(
 	__dirname,
-	"../../test-fixtures/integration/autoprefixer"
+	"../../test-fixtures/integration/autoprefixer",
 );
 
 describe("Integration with autoprefixer", () => {
@@ -24,7 +24,7 @@ describe("Integration with autoprefixer", () => {
 					.then(function (result) {
 						const actual = result.content;
 						chai.expect(actual).toMatchSnapshot();
-					})
+					}),
 			);
 		});
 	}

@@ -98,7 +98,7 @@ describe("error tests", () => {
 		expect(() =>
 			parser.parse(md, {
 				from: "markdown.md",
-			})
+			}),
 		).to.throw("TEST");
 	});
 	it("define rules option", () => {
@@ -119,7 +119,7 @@ describe("error tests", () => {
 		expect(() =>
 			parser.parse(md, {
 				from: "markdown.md",
-			})
+			}),
 		).to.throw("Unknown word");
 	});
 	it("define syntax option", () => {
@@ -135,7 +135,7 @@ describe("error tests", () => {
 		expect(() =>
 			parser.parse(md, {
 				from: "markdown.md",
-			})
+			}),
 		).to.throw('Cannot resolve module "postcss-foo"');
 	});
 });

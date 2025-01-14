@@ -207,10 +207,10 @@ block
 exports[`Integration with stylelint stylelint with markdown block-in-blockquote.md 1`] = `
 Array [
   Object {
-    "column": 7,
-    "endColumn": 8,
+    "column": 4,
+    "endColumn": 1,
     "endLine": 36,
-    "line": 36,
+    "line": 35,
     "rule": "block-closing-brace-empty-line-before",
     "severity": "error",
     "text": "Unexpected empty line before closing brace (block-closing-brace-empty-line-before)",
@@ -243,19 +243,19 @@ Array [
     "text": "Expected indentation of 4 spaces (indentation)",
   },
   Object {
-    "column": 5,
-    "endColumn": 6,
-    "endLine": 25,
-    "line": 25,
+    "column": 27,
+    "endColumn": 28,
+    "endLine": 23,
+    "line": 23,
     "rule": "indentation",
     "severity": "error",
     "text": "Expected indentation of 2 spaces (indentation)",
   },
   Object {
-    "column": 7,
-    "endColumn": 8,
+    "column": 4,
+    "endColumn": 1,
     "endLine": 36,
-    "line": 36,
+    "line": 35,
     "rule": "indentation",
     "severity": "error",
     "text": "Expected indentation of 4 spaces (indentation)",
@@ -286,7 +286,7 @@ Array [
   Object {
     "column": 1,
     "endColumn": 2,
-    "endLine": 18,
+    "endLine": 21,
     "line": 18,
     "rule": "no-empty-first-line",
     "severity": "error",
@@ -295,7 +295,7 @@ Array [
   Object {
     "column": 1,
     "endColumn": 2,
-    "endLine": 38,
+    "endLine": 41,
     "line": 38,
     "rule": "no-empty-first-line",
     "severity": "error",
@@ -361,8 +361,8 @@ Array [
 exports[`Integration with stylelint stylelint with markdown block-in-list-blockquote.md 1`] = `
 Array [
   Object {
-    "column": 5,
-    "endColumn": 6,
+    "column": 4,
+    "endColumn": 5,
     "endLine": 9,
     "line": 9,
     "rule": "block-closing-brace-empty-line-before",
@@ -370,8 +370,8 @@ Array [
     "text": "Unexpected empty line before closing brace (block-closing-brace-empty-line-before)",
   },
   Object {
-    "column": 8,
-    "endColumn": 9,
+    "column": 7,
+    "endColumn": 8,
     "endLine": 16,
     "line": 16,
     "rule": "block-closing-brace-empty-line-before",
@@ -397,8 +397,8 @@ Array [
     "text": "Expected indentation of 8 spaces (indentation)",
   },
   Object {
-    "column": 8,
-    "endColumn": 9,
+    "column": 7,
+    "endColumn": 8,
     "endLine": 16,
     "line": 16,
     "rule": "indentation",
@@ -553,7 +553,7 @@ Array [
   Object {
     "column": 1,
     "endColumn": 2,
-    "endLine": 38,
+    "endLine": 43,
     "line": 38,
     "rule": "no-empty-first-line",
     "severity": "error",

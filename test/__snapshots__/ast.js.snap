@@ -266,7 +266,6 @@ Object {
       "type": "root",
     },
     Object {
-      "document": "$document",
       "indexes": Object {},
       "lastEach": 2,
       "nodes": Array [
@@ -1388,7 +1387,6 @@ Object {
       "type": "root",
     },
     Object {
-      "document": "$document",
       "indexes": Object {},
       "lastEach": 2,
       "nodes": Array [],
@@ -1486,7 +1484,6 @@ style: <style> .a {} </style>
   ],
   "nodes": Array [
     Object {
-      "document": "$document",
       "indexes": Object {},
       "lastEach": 2,
       "nodes": Array [
@@ -1626,7 +1623,6 @@ color: red;
   ],
   "nodes": Array [
     Object {
-      "document": "$document",
       "indexes": Object {},
       "lastEach": 2,
       "nodes": Array [
@@ -1710,7 +1706,6 @@ color: red;
       "type": "root",
     },
     Object {
-      "document": "$document",
       "indexes": Object {},
       "lastEach": 2,
       "nodes": Array [
@@ -1791,7 +1786,6 @@ color: red;
       "type": "root",
     },
     Object {
-      "document": "$document",
       "indexes": Object {},
       "lastEach": 2,
       "nodes": Array [
@@ -1874,7 +1868,6 @@ color: red;
       "type": "root",
     },
     Object {
-      "document": "$document",
       "indexes": Object {},
       "lastEach": 2,
       "nodes": Array [
@@ -2150,7 +2143,6 @@ a {
       "type": "root",
     },
     Object {
-      "document": "$document",
       "indexes": Object {},
       "lastEach": 2,
       "nodes": Array [
@@ -2259,7 +2251,6 @@ a {
       "type": "root",
     },
     Object {
-      "document": "$document",
       "indexes": Object {},
       "lastEach": 2,
       "nodes": Array [
@@ -2350,7 +2341,6 @@ a {
       "type": "root",
     },
     Object {
-      "document": "$document",
       "indexes": Object {},
       "lastEach": 2,
       "nodes": Array [
@@ -2471,7 +2461,6 @@ Object {
   ],
   "nodes": Array [
     Object {
-      "document": "$document",
       "indexes": Object {},
       "lastEach": 2,
       "nodes": Array [
@@ -2617,7 +2606,6 @@ Object {
   ],
   "nodes": Array [
     Object {
-      "document": "$document",
       "indexes": Object {},
       "lastEach": 2,
       "nodes": Array [
@@ -2667,7 +2655,6 @@ Object {
       "type": "root",
     },
     Object {
-      "document": "$document",
       "indexes": Object {},
       "lastEach": 2,
       "nodes": Array [
@@ -3474,7 +3461,6 @@ a {
       "type": "root",
     },
     Object {
-      "document": "$document",
       "indexes": Object {},
       "lastEach": 2,
       "nodes": Array [
@@ -3609,7 +3595,6 @@ a {
       "type": "root",
     },
     Object {
-      "document": "$document",
       "indexes": Object {},
       "lastEach": 2,
       "nodes": Array [
@@ -4079,7 +4064,6 @@ block
       "type": "root",
     },
     Object {
-      "document": "$document",
       "indexes": Object {},
       "lastEach": 2,
       "nodes": Array [
@@ -4162,7 +4146,6 @@ block
       "type": "root",
     },
     Object {
-      "document": "$document",
       "indexes": Object {},
       "lastEach": 2,
       "nodes": Array [

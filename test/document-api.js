@@ -1,9 +1,6 @@
-"use strict";
-
-const expect = require("chai").expect;
-
-const postcss = require("postcss");
-const syntax = require("../");
+import { expect } from "chai";
+import postcss from "postcss";
+import syntax from "../lib/index.js";
 
 describe("api tests", () => {
 	it("stringify for append node", () => {

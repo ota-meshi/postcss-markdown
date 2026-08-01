@@ -1,17 +1,15 @@
-"use strict";
-
-const path = require("path");
-const chai = require("chai");
-const { jestSnapshotPlugin } = require("mocha-chai-jest-snapshot");
-const autoprefixer = require("autoprefixer");
-const postcss = require("postcss");
-const { listupFixtures } = require("../utils");
-const syntax = require("../..");
+import path from "path";
+import autoprefixer from "autoprefixer";
+import * as chai from "chai";
+import { jestSnapshotPlugin } from "mocha-chai-jest-snapshot";
+import postcss from "postcss";
+import syntax from "../../lib/index.js";
+import { listupFixtures } from "../utils.js";
 
 chai.use(jestSnapshotPlugin());
 
 const FIXTURE_ROOT = path.resolve(
-	__dirname,
+	import.meta.dirname,
 	"../../test-fixtures/integration/autoprefixer",
 );
 

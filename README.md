@@ -29,21 +29,28 @@ If you want support SCSS/SASS/LESS/SugarSS syntax, you need to install the corre
 - SugarSS: [sugarss](https://github.com/postcss/sugarss)
 - Stylus: [postcss-styl](https://github.com/ota-meshi/postcss-styl)
 
+This package is written in ESM and requires Node.js `^22.12 || >=24`. CommonJS consumers can still load it with `require("postcss-markdown")` on these Node.js versions (via `require(esm)`).
+
 ## Use Cases
 
 ```js
-const postcss = require("postcss");
-const syntax = require("postcss-markdown")({
+import postcss from "postcss";
+import postcssMarkdown from "postcss-markdown";
+import postcssScss from "postcss-scss";
+import postcssLess from "postcss-less";
+import postcssSafeParser from "postcss-safe-parser";
+import autoprefixer from "autoprefixer";
+
+const syntax = postcssMarkdown({
     // Enable support for HTML (default: true)
     htmlInMd: true,
     // syntax for parse scss (non-required options)
-    scss: require("postcss-scss"),
+    scss: postcssScss,
     // syntax for parse less (non-required options)
-    less: require("postcss-less"),
+    less: postcssLess,
     // syntax for parse css blocks (non-required options)
-    css: require("postcss-safe-parser"),
+    css: postcssSafeParser,
 });
-const autoprefixer = require("autoprefixer");
 postcss([autoprefixer])
     .process(source, { syntax: syntax })
     .then(function (result) {
@@ -93,6 +100,12 @@ If you want support SCSS/SASS/LESS/SugarSS syntax, you need to install these mod
 ### Options
 
 ```js
+import { createRequire } from "module";
+import postcssMarkdown from "postcss-markdown";
+import postcssSass from "postcss-sass";
+import sugarss from "sugarss";
+import postcssCustomSyntax from "postcss-custom-syntax";
+
 const options = {
     rules: [
         {
@@ -110,17 +123,17 @@ const options = {
     // custom parser for CSS (using `postcss-safe-parser`)
     css: "postcss-safe-parser",
     // custom parser for SASS (PostCSS-compatible syntax.)
-    sass: require("postcss-sass"),
+    sass: postcssSass,
     // custom parser for SCSS (by module name)
     scss: "postcss-scss",
     // custom parser for LESS (by module path)
-    less: require.resolve("./node_modules/postcss-less"),
+    less: createRequire(import.meta.url).resolve("postcss-less"),
     // custom parser for SugarSS
-    sugarss: require("sugarss"),
+    sugarss: sugarss,
     // custom parser for custom language
-    custom: require("postcss-custom-syntax"),
+    custom: postcssCustomSyntax,
 };
-const syntax = require("postcss-markdown")(options);
+const syntax = postcssMarkdown(options);
 ```
 
 ## Turning PostCSS off from within your Markdown

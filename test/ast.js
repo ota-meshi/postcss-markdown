@@ -1,14 +1,15 @@
-"use strict";
-
-const path = require("path");
-const chai = require("chai");
-const { jestSnapshotPlugin } = require("mocha-chai-jest-snapshot");
-const syntax = require("../");
-const { listupFixtures } = require("./utils");
+import path from "path";
+import * as chai from "chai";
+import { jestSnapshotPlugin } from "mocha-chai-jest-snapshot";
+import syntax from "../lib/index.js";
+import { listupFixtures } from "./utils.js";
 
 chai.use(jestSnapshotPlugin());
 
-const AST_FIXTURE_ROOT = path.resolve(__dirname, "../test-fixtures/ast");
+const AST_FIXTURE_ROOT = path.resolve(
+	import.meta.dirname,
+	"../test-fixtures/ast",
+);
 
 describe("AST tests", () => {
 	for (const { filename, content } of listupFixtures(AST_FIXTURE_ROOT)) {

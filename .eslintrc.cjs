@@ -4,8 +4,8 @@
 
 module.exports = {
 	parserOptions: {
-		sourceType: "script",
-		ecmaVersion: 2020,
+		sourceType: "module",
+		ecmaVersion: 2022,
 	},
 	env: {
 		node: true,
@@ -35,6 +35,26 @@ module.exports = {
 		"prefer-const": "error",
 	},
 	overrides: [
+		{
+			files: ["*.js", "*.mjs"],
+			parserOptions: {
+				sourceType: "module",
+				ecmaVersion: 2022,
+			},
+			rules: {
+				"node/file-extension-in-import": ["error", "always"],
+				"node/no-unsupported-features/es-syntax": [
+					"error",
+					{ ignores: ["modules"] },
+				],
+			},
+		},
+		{
+			files: ["*.cjs"],
+			parserOptions: {
+				sourceType: "script",
+			},
+		},
 		{
 			files: ["test/**/*.js"],
 			rules: {

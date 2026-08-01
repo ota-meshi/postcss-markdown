@@ -1,7 +1,7 @@
-"use strict";
-
-const expect = require("chai").expect;
-const syntax = require("../");
+import { expect } from "chai";
+import postcssScss from "postcss-scss";
+import postcssStyl from "postcss-styl";
+import syntax from "../lib/index.js";
 
 describe("syntax option tests", () => {
 	it("syntax option", () => {
@@ -17,8 +17,8 @@ describe("syntax option tests", () => {
 			"```",
 		].join("\n");
 		const document = syntax({
-			s: require("postcss-styl"),
-			css: require("postcss-scss"),
+			s: postcssStyl,
+			css: postcssScss,
 		}).parse(md, {
 			from: "markdown.md",
 		});
@@ -59,8 +59,8 @@ describe("syntax option tests", () => {
 			"</style>",
 		].join("\n");
 		const document = syntax({
-			s: require("postcss-styl"),
-			css: require("postcss-scss"),
+			s: postcssStyl,
+			css: postcssScss,
 		}).parse(md, {
 			from: "markdown.md",
 		});

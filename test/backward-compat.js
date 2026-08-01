@@ -1,7 +1,5 @@
-"use strict";
-
-const expect = require("chai").expect;
-const syntax = require("../");
+import { expect } from "chai";
+import syntax from "../lib/index.js";
 
 describe("backward compatible tests", () => {
 	it("Config", () => {

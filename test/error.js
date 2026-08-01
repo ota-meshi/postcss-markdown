@@ -1,8 +1,6 @@
-"use strict";
-
-const path = require("path");
-const expect = require("chai").expect;
-const syntax = require("../");
+import path from "path";
+import { expect } from "chai";
+import syntax from "../lib/index.js";
 
 describe("error tests", () => {
 	it("single line syntax error", () => {
@@ -93,7 +91,7 @@ describe("error tests", () => {
 			"```",
 		].join("\n");
 		const parser = syntax({
-			foo: path.join(__dirname, "./error-test-module.txt"),
+			foo: path.join(import.meta.dirname, "./error-test-module.txt"),
 		});
 		expect(() =>
 			parser.parse(md, {

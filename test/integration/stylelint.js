@@ -1,17 +1,17 @@
-"use strict";
+import { createRequire } from "module";
+import path from "path";
+import * as chai from "chai";
+import { jestSnapshotPlugin } from "mocha-chai-jest-snapshot";
+import stylelint from "stylelint";
+import stylelintConfig from "stylelint-config-standard";
+import { listupFixtures } from "../utils.js";
 
-const path = require("path");
-const chai = require("chai");
-const { jestSnapshotPlugin } = require("mocha-chai-jest-snapshot");
-const stylelint = require("stylelint");
-const stylelintConfig = require("stylelint-config-standard");
-const { listupFixtures } = require("../utils");
-const customSyntax = require.resolve("../..");
+const customSyntax = createRequire(import.meta.url).resolve("../..");
 
 chai.use(jestSnapshotPlugin());
 
 const FIXTURE_ROOT = path.resolve(
-	__dirname,
+	import.meta.dirname,
 	"../../test-fixtures/integration/stylelint",
 );
 

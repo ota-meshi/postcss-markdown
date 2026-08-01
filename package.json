@@ -69,7 +69,7 @@
     "eslint": "^10.8.0",
     "eslint-config-prettier": "^10.0.0",
     "eslint-plugin-jsdoc": "^63.3.2",
-    "eslint-plugin-json-schema-validator": "^5.0.0",
+    "eslint-plugin-json-schema-validator": "^6.0.0",
     "eslint-plugin-jsonc": "^2.0.0",
     "eslint-plugin-n": "^18.2.2",
     "eslint-plugin-node-dependencies": "^2.2.0",

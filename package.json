@@ -51,10 +51,10 @@
     "update-snap": "mocha \"test/**/*.js\" --no-timeouts --update"
   },
   "dependencies": {
-    "mdast-util-from-markdown": "^0.8.5",
-    "mdast-util-frontmatter": "^0.2.0",
-    "micromark-extension-frontmatter": "^0.2.2",
-    "postcss-safe-parser": "^6.0.0"
+    "mdast-util-from-markdown": "^2.0.3",
+    "mdast-util-frontmatter": "^2.0.1",
+    "micromark-extension-frontmatter": "^2.0.0",
+    "postcss-safe-parser": "^7.0.1"
   },
   "peerDependencies": {
     "postcss": "^8.5.0"

@@ -1,4 +1,4 @@
-import path from "path";
+import { fileURLToPath } from "url";
 import * as chai from "chai";
 import { jestSnapshotPlugin } from "mocha-chai-jest-snapshot";
 import syntax from "../lib/index.js";
@@ -6,9 +6,8 @@ import { listupFixtures } from "./utils.js";
 
 chai.use(jestSnapshotPlugin());
 
-const AST_FIXTURE_ROOT = path.resolve(
-	import.meta.dirname,
-	"../test-fixtures/ast",
+const AST_FIXTURE_ROOT = fileURLToPath(
+	new URL("../test-fixtures/ast", import.meta.url),
 );
 
 describe("AST tests", () => {

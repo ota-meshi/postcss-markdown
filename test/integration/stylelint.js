@@ -1,5 +1,5 @@
 import { createRequire } from "module";
-import path from "path";
+import { fileURLToPath } from "url";
 import * as chai from "chai";
 import { jestSnapshotPlugin } from "mocha-chai-jest-snapshot";
 import stylelint from "stylelint";
@@ -10,9 +10,8 @@ const customSyntax = createRequire(import.meta.url).resolve("../..");
 
 chai.use(jestSnapshotPlugin());
 
-const FIXTURE_ROOT = path.resolve(
-	import.meta.dirname,
-	"../../test-fixtures/integration/stylelint",
+const FIXTURE_ROOT = fileURLToPath(
+	new URL("../../test-fixtures/integration/stylelint", import.meta.url),
 );
 
 describe("Integration with stylelint", () => {

@@ -1,4 +1,4 @@
 {
-	"reporter": ["lcov", "text"],
-	"check-coverage": true
+  "reporter": ["lcov", "text"],
+  "check-coverage": true
 }

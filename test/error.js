@@ -1,4 +1,4 @@
-import path from "path";
+import { fileURLToPath } from "url";
 import { expect } from "chai";
 import syntax from "../lib/index.js";
 
@@ -91,7 +91,7 @@ describe("error tests", () => {
 			"```",
 		].join("\n");
 		const parser = syntax({
-			foo: path.join(import.meta.dirname, "./error-test-module.txt"),
+			foo: fileURLToPath(new URL("./error-test-module.txt", import.meta.url)),
 		});
 		expect(() =>
 			parser.parse(md, {

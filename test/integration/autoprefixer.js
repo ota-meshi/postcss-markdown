@@ -1,4 +1,4 @@
-import path from "path";
+import { fileURLToPath } from "url";
 import autoprefixer from "autoprefixer";
 import * as chai from "chai";
 import { jestSnapshotPlugin } from "mocha-chai-jest-snapshot";
@@ -8,9 +8,8 @@ import { listupFixtures } from "../utils.js";
 
 chai.use(jestSnapshotPlugin());
 
-const FIXTURE_ROOT = path.resolve(
-	import.meta.dirname,
-	"../../test-fixtures/integration/autoprefixer",
+const FIXTURE_ROOT = fileURLToPath(
+	new URL("../../test-fixtures/integration/autoprefixer", import.meta.url),
 );
 
 describe("Integration with autoprefixer", () => {
